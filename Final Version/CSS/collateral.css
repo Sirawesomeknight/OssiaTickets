@@ -1,0 +1,74 @@
+body{
+padding:0px;
+margin:0px;
+font-size:100%;
+width:100%;
+overflow-x:hidden;
+overflow-y:auto;
+background: #0f4461;
+overflow-y: scroll;
+}
+#tint{
+  background-color:rgba(15, 68, 97,0.8);
+  z-index: 0;
+  width: inherit;
+  min-height: inherit;
+  display: inherit;
+  flex-direction: inherit;
+}
+#content{
+  background-size:cover;
+  background-attachment:fixed;
+  background-color:#1b4559;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  position:relative;
+  min-height: 96vh;
+}
+#centerbox{
+  border-radius:25px;
+  border-style:solid;
+  border-color:#ceb165;
+  width:30vw;
+  max-width:40vw;
+  background-color:rgba(15, 68, 97);
+  text-align:center;
+  padding:20px;
+  padding-bottom:40px;
+  margin-top: 5vh;
+  display:flex;
+  align-self: center;
+  flex-direction:column;
+  color:white;
+  font-family: 'sitefont';
+  min-height: 270px;
+}
+#inputs{
+  display: inherit;
+  flex-direction: inherit;
+  justify-content:space-between;
+}
+.StripeElement {
+  background-color: white;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}

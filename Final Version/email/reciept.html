@@ -1,0 +1,91 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+  p {
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+  }
+  h2{
+    margin-bottom:0.2em;
+  }
+  </style>
+  <body style="font-family: Tahoma, Geneva, sans-serif; display: flex; flex-direction:column;">
+    <div id="content" style="display:flex; flex-direction:column; width:50%; padding:16px; align-self: center; text-align:center; border: 1px solid black;">
+      <img style="align-self:left; width:25%; height:56px;" id="logo" src="https://s3.us-east-2.amazonaws.com/csrfresources/logo_email.png">
+      <h1 style="margin-bottom:0.2em;">Congrats [NAME]</h1>
+      <h2 style="margin-top:0.2em;">We've received you ticket order.</h2>
+      <br>
+      <p>Order Placed: [Month, Day, Year]</p>
+      <p>Order Number: [Number]</p>
+      <br>
+      <div id="money" style="display: flex; flex-direction: row; justify-content: space-between; padding-right:90px; padding-left: 90px;">
+        <div id="billing">
+          <h2>Billing Information</h2>
+          <p style="text-align:left;">[First, Last]</p>
+          <p style="text-align:left;">[Address, City, State, Zip]</p>
+          <p style="text-align:left;">[Phone]</p>
+        </div>
+        <div id="payment">
+          <h2>Payment Method</h2>
+          <p style="text-align:right;">[Card Type]</p>
+          <p style="text-align:right;">************1234</p>
+        </div>
+      </div>
+      <h2 style="text-align:left;">Tickets Purchased</h2>
+      <hr style="width:95%;">
+      <table>
+        <tr>
+          <th>Event Name</th>
+          <th>Date</th>
+          <th>Seat(s)</th>
+          <th>Sale Type</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>[Name, Venue]</td>
+          <td>[Month, Day, Year]</td>
+          <td>[Seat]</td>
+          <td>[Online or Physical]</td>
+          <td>[#]</td>
+          <td>[$$]</td>
+        </tr>
+      </table>
+      <br>
+      <p style="text-align:left;">Shipping Type: [Type]</p>
+      <p style="text-align:right;">Price of Shipping: [$$]</p>
+      <p style="text-align:right;">Total Price:</p>
+      <p style="text-align:right;">[$$]</p>
+      <br>
+      <h2>Shipping Details</h2>
+      <div id="shipping" style="display: flex; flex-direction: row; justify-content: space-between; padding-right:90px; padding-left:90px;">
+        <div id="info" style="text-align:left;">
+          <p>[First, Last]</p>
+          <p>[Address, City, State, Zip]</p>
+          <p>[Phone]</p>
+        </div>
+        <div id="arrival" style="text-align:right;">
+          <p>Estimated Ticket Arrival</p>
+          <p>Date: [Month, Day, Year]</p>
+        </div>
+      </div>
+      <!-- TODO: placeholder shipping guarentee, replace with actual shipping guarentee -->
+      <p>We Guarentee that you will receive all physical tickets as long as your order is placed at least 72 hours before an event.</p>
+      <br>
+      <h2>Have an amazing time!</h2>
+      <p style="text-align:left;">Taking pictures of your adventure? Post them with #OssiaConcert for a chance to win free tickets to your choice of concert. Post as many unique pictures as you like, winners will be picked randomly at the end of every month.</p>
+      <!-- TODO: Click here for terms and conditions -->
+      <br>
+      <div id="social" style="width: 40%;display:flex; flex-direction:row; justify-content: space-between; align-self:center;">
+        <a href="https://open.spotify.com/user/commander_jamslo/playlist/5JAKeOWzrBBExc1HEjlhT0?si=HxZlj3alS-2mpEB1n1MpPA">Spotify</a>
+        <a href="https://www.facebook.com/ossiatickets/">Facebook</a>
+        <a href="https://www.instagram.com/ossiatickets/">Instagram</a>
+      </div>
+      <br>
+      <p>Questions? Concerns? Call us at 1-(773)-750-6005 or send us an email at tickets@ossiatickets.com</p>
+    </div>
+  </body>
+</html>

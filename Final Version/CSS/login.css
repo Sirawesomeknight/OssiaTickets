@@ -1,0 +1,93 @@
+@font-face{
+  font-family:"sitefont";
+  src:url("../resources/Delicious-Roman.otf");
+}
+@font-face{
+  font-family:"sitefontbold";
+  src:url("../resources/Delicious-Bold.otf");
+}
+body{
+  padding:0px;
+  margin:0px;
+  font-size:100%;
+  width:100%;
+  min-height:100vh;
+  overflow-x:hidden;
+  overflow-y:auto;
+  display:flex;
+  flex-direction: column;
+}
+.input{
+  font-family: "sitefont";
+  font-size: 20px;
+}
+#content{
+  background-size:cover;
+  background-attachment:fixed;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  position:relative;
+  min-height: 96vh;
+}
+#tint{
+  background-color:rgba(15, 68, 97,0.8);
+  z-index: 0;
+  width: 100%;
+  display: inherit;
+  flex-direction: column;
+  min-height: inherit;
+}
+#centerbox{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:30vw;
+  align-self: center;
+
+}
+#loginbox{
+  padding:40px;
+  padding-top:0px;
+  padding-bottom
+  border-style:solid;
+  border-color:#ceb165;
+  border-width:3px;
+  border-radius:10px;
+  border-style: solid;
+  background-color:#1b4559;
+  display:flex;
+  flex-direction: column;
+  margin-top:7vh;
+  margin-bottom: 7vh;
+}
+#content h1{
+  color:white;
+  font-family:"sitefont";
+}
+.inputbox{
+  width:90%;
+  height:30px;
+  font-family:"sitefont";
+  font-size:25px;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding:2px;
+  border-style:none;
+}
+a{
+  color:rgb(32, 150, 171);
+  font-family: "sitefont";
+}
+a:hover{
+  color:#ccaf66;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+.stdbutton{
+  align-self: center;
+  font-family: "sitefont";
+}

@@ -1,0 +1,393 @@
+body{
+  padding:0px;
+  margin:0px;
+  /* min-height:100vh; */
+  font-size:100%;
+  width:100%;
+  overflow-x:auto;
+  overflow-y:scroll;
+}
+#content::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+#content::-webkit-scrollbar-track {
+  height: 0;
+width: 0;
+}
+#content::-webkit-scrollbar-thumb {
+
+}
+#content::-webkit-scrollbar-thumb:hover {
+
+}
+.custom-select{
+  font-family: 'sitefont';
+}
+.input{
+  font-family: 'sitefont';
+}
+#content{
+  background-image:url("../borgis.jpg");
+  background-size:cover;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  min-height:96vh;
+}
+#content2{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+
+}
+.infobox{
+  border-radius:25px;
+  border-style:solid;
+  border-color:#ceb165;
+  min-width:20vw;
+  max-width:60vw;
+  background-color:rgba(15, 68, 97, 1);
+  min-height:60vh;
+  text-align:center;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  margin-bottom: 40px;
+  /* margin-left:10px;
+  margin-right:10px; */
+  color:white;
+  font-family:'sitefont';
+}
+h1{
+  font-family:"sitefont";
+  color:white;
+}
+#artistinfo{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  height:20%;
+}
+#order{
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+#order p{
+  color: white;
+  font-family: 'sitefont';
+}
+#artistinfo img{
+  height:100%;
+  border-radius:10000px;
+  border-style:solid;
+  border-width:2px;
+  border-color:white;
+  height: 132px;
+  width: 132px;
+}
+#eventlist{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-left:20px;
+  height:100%;
+}
+#eventlist h3{
+  padding:0px;
+  margin:0px;
+  color:white;
+  font-size:calc(100vh / 30);
+  font-family:"sitefont";
+}
+#eventlist p{
+  padding:0px;
+  margin:0px;
+  color:white;
+  font-size:calc(100vh / 46);
+  font-family:"sitefont";
+}
+.actbutton{
+  color:white;
+  font-family:"sitefont";
+  font-size:30px;
+  border-color:white;
+  border-style:solid;
+  border-width:2px;
+  border-radius:25px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:2px;
+  padding-bottom:5px;
+  width:20%;
+  align-self:center;
+  cursor: pointer;
+}
+.actbutton:hover{
+  background-color:white;
+  color:#1f96ad;
+}
+#tint{
+  background-color:rgba(15, 68, 97,0.8);
+  min-height:inherit;
+  display:inherit;
+  flex-direction:inherit;
+  justify-content:inherit;
+  padding:0px;
+  margin:0px;
+}
+#quantity{
+  align-self:center;
+  /* min-width: 80%; */
+}
+.transtype{
+  color:white;
+  background-color: #0f4461;
+  font-family:"sitefont";
+  font-size:30px;
+  border-color:white;
+  border-style:solid;
+  border-width:3px;
+  border-radius:25px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  width:20%;
+  align-self:center;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out,
+                      color 0.2s ease-out;
+  cursor: pointer;
+}
+.transtype:hover{
+  background-color:white;
+  color:#0f4461;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out,
+                      color 0.2s ease-out;
+}
+#lastprices{
+  display:none;
+  justify-content:flex-start;
+}
+#seatingmap{
+  display:none;
+  justify-content:center;
+  min-height:60vh;
+}
+#pricetable{
+  width:100%;
+  height:auto;
+  margin-bottom:30px;
+  overflow-y:scroll;
+}
+#pricetable::-webkit-scrollbar {
+  width: 5px;
+}
+#pricetable::-webkit-scrollbar-track {
+
+}
+#pricetable::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+#pricetable::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#pricetable td{
+  background-color:#2096ab;
+  width:50%;
+  text-align:center;
+  font-family:"sitefont";
+  font-size:20px;
+  color:white;
+}
+#pricetable th{
+  background-color:#2096ab;
+  width:50%;
+  text-align:center;
+  font-family:"sitefont";
+  font-size:20px;
+  color:white;
+}
+#venueimage{
+  flex-grow:1;
+}
+#lastprices p{
+  padding:5px;
+  margin:0px;
+  color:white;
+  font-family:"sitefont";
+}
+#seatingmap p{
+  padding:0px;
+  margin:0px;
+  color:white;
+  font-family:"sitefont";
+}
+#seatingmap h1{
+  padding:5px;
+  margin:0px;
+  color:white;
+  font-family:"sitefont";
+}
+#overlay{
+  z-index:2;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.5);
+  cursor:pointer;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:none;
+  flex-direction:row;
+  justify-content:center;
+}
+#recap{
+  margin-left:20px;
+}
+#loadingicon{
+  width:300px;
+  height:300px;
+}
+#dragdropoverlay{
+  z-index:2;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.5);
+  cursor:pointer;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:none;
+  flex-direction:row;
+  justify-content:center;
+}
+#filenum{
+  display:none;
+  margin-left:20px;
+  margin-right:20px;
+}
+#progresscontainer{
+  background-color:white;
+  height:5px;
+  width:80%;
+  border-radius:2.5px;
+  align-self:center;
+}
+#progress{
+  background-color:#2096ab;
+  width:0px;
+  height:5px;
+  border-radius:2.5px;
+}
+.animate-in{
+  animation: in 600ms ease-in-out forwards;
+}
+.animate-out{
+  animation: out 600ms ease-in-out forwards;
+}
+
+@keyframes in {
+  0% {
+    transform: translateX(200vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+@keyframes out {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(-200vw);
+  }
+}
+#lowerbox{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+.inputs{
+  display:flex;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.seatinfo{
+  display:inherit;
+  justify-content:inherit;
+  flex-direction:inherit;
+}
+#REVIEWBUY{
+  display:none;
+}
+#REVIEWSELL{
+  display:none;
+}
+#reviewcontents{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#left{
+  display: flex;
+  flex-direction: column;
+}
+#right{
+  display:flex;
+  flex-direction: column;
+}
+#submit{
+  visibility:hidden;
+}
+.uploadedproof{
+  display:none;
+}
+#inputmprice{
+  display:none;
+}
+#nextSeat{
+  max-width:40%;
+}
+#nextSeat:hover{
+  background-color: rgb(18, 80, 114);
+}
+.StripeElement {
+  background-color: white;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+.inputinfo{
+  display:none;
+  flex-direction:column;
+  justify-content:space-around;
+}

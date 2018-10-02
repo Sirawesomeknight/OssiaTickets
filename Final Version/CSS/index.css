@@ -1,0 +1,287 @@
+input[type="search"]{
+  -webkit-appearance: textfield;
+}
+
+#mfesecure-ts-image{
+  visibility: hidden;
+}
+#navbar{
+  z-index: 2;
+  position: absolute;
+}
+body{
+padding:0px;
+margin:0px;
+font-size:100%;
+width:100%;
+overflow-x:hidden;
+overflow-y:auto;
+background: #0f4461;
+}
+sup{
+  font-size: 35%;
+}
+#tint{
+  background-color:rgba(15, 68, 97,0.9);
+  z-index: 0;
+  width: inherit;
+  min-height: inherit;
+  display: inherit;
+  flex-direction: inherit;
+}
+#content{
+  background-image:url("../borgis.jpg");
+  background-size:cover;
+  background-attachment:fixed;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  width:100%;
+  min-height:96vh;
+  z-index: -1;
+}
+#searchsuggestions p{
+  color:white;
+  font-family: 'sitefont';
+  size:calc(100vw / 48);
+  padding:10px 20px;
+}
+@keyframes scrollleft{
+  from{left:0%;}
+  to{left:100%;}
+}
+#searchsuggestions{
+  visibility:hidden;
+  flex-direction:column;
+  overflow-y:scroll;
+  height:300px;
+  width:45vw;
+  align-self:center;
+  border-bottom-right-radius:25px;
+  border-bottom-left-radius:25px;
+  border-bottom-style:solid;
+  border-bottom-width:0px;
+  background: linear-gradient(to right,#0f4461,#1a95ac);
+}
+#searchsuggestions div:hover {
+  background-color: rgb(17, 45, 58);
+}
+#searchsuggestions::-webkit-scrollbar {
+  width: 5px;
+}
+#searchsuggestions::-webkit-scrollbar-track {
+
+}
+#searchsuggestions::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+#searchsuggestions::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.sugimg{
+  height:10vw;
+  width:10vw;
+  margin:10px;
+}
+#searchsuggestions h2{
+  margin:0px;
+  padding:0px;
+  color:white;
+  font-family:"sitefont";
+  font-size:40px;
+}
+#searchsuggestions p{
+  margin:0px;
+  padding:0px;
+  font-family:"sitefont";
+  color:white;
+  font-family:20px;
+}
+.bardiv{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+.text{
+  display:flex;
+  flex-direction:column;
+}
+.contenttext{
+  text-align:left;
+}
+#indexbackground{
+  background-size:cover;
+  background-attachment:fixed;
+  width:100%;
+  height:calc(80vh + 20px);
+}
+#labelcontainer h1{
+  align-self:center;
+  background-image:url("../cutter.jpg");
+  background-position:1316px 284px;;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:calc(100vw / 6);
+  font-family:"sitefont";
+  letter-spacing:7px;
+  position:absolute;
+  z-index:0;
+  margin:0px;
+  padding:0px;
+  opacity:0;
+}
+#searchbar{
+  width:50vw;
+  height:3.6vw;
+  font-family:"sitefont";
+  color:white;
+  font-size:calc(100vw/48);
+  border-radius:20px;
+  border-style:none;
+  padding:10px 20px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
+  align-self:center;
+  /* transition: background 0.2s ease-out;
+  transtition: color 0.2s ease-out;
+  -webkit-transition: background 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out; */
+  opacity:0;
+}
+#searchbar:focus{
+  outline:none;
+  background: linear-gradient(to right,#0f4461,#1a95ac);
+  /* transition: background 0.2s ease-out;
+  transtition: color 0.2s ease-out;
+  -webkit-transition: background 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out; */
+}
+#searchstuff{
+  width:75%;
+  position:absolute;
+  z-index:1;
+  align-self:center;
+  flex-direction:column;
+  justify-content:flex-start;
+  display:flex;
+  margin-top:150px;
+}
+#labelcontainer{
+  display:none;
+  flex-direction:column;
+  justify-content:center;
+  width:100vw;
+  height:95vh;
+  position: absolute;
+  /* margin-bottom:20vh; */
+  order:1;
+}
+#currentLoc{
+  display:none;
+}
+#welcomecontainer{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-self:center;
+  width:100vw;
+  height:95vh;
+  position: absolute;
+  /* margin-bottom:20vh; */
+  order:1;
+}
+#buysellbuttons{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+.transtype{
+  color:white;
+  background-color:#1a95ac;
+  font-family:"sitefont";
+  font-size:27px;
+  border-color:white;
+  border-style:solid;
+  border-width:3px;
+  border-radius:25px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  align-self:center;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out,
+                      color 0.2s ease-out;
+  cursor: pointer;
+}
+.transtype:hover{
+  background-color:white;
+  color:#0f4461;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out,
+                      color 0.2s ease-out;
+}
+#saletype{
+  display:none;
+}
+.animate-in{
+  animation: in 600ms ease-in-out forwards;
+}
+.animate-inpt2{
+  animation: in 1200ms ease-in-out forwards;
+}
+.animate-inpt3{
+  animation: in 1800ms ease-in-out forwards;
+}
+.animate-out{
+  animation: out 600ms ease-in-out forwards;
+}
+
+@keyframes in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: 0;
+  }
+}
+#firsttitle{
+  color:white;
+  align-self:center;
+  font-size:70px;
+  font-family: 'logofont';
+  padding:0px;
+  margin:0px;
+  opacity: 0;
+}
+#msg{
+  color:white;
+  font-family: 'sitefont';
+  align-self:center;
+  font-size:30px;
+  opacity: 0;
+}
+#buy{
+  opacity:0;
+  white-space:nowrap;
+  margin:40px;
+}
+#sell{
+  opacity:0;
+  white-space:nowrap;
+  margin:40px;
+}
+#regist{
+  opacity:0;
+  margin:40px;
+}

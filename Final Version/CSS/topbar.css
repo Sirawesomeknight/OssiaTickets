@@ -1,0 +1,141 @@
+@font-face{
+  font-family:"sitefont";
+  src:url("../resources/Delicious-Roman.otf");
+}
+@font-face{
+  font-family:"sitefontbold";
+  src:url("../resources/Delicious-Bold.otf");
+}
+@font-face{
+  font-family:"logofont";
+  src:url("../resources/Avenir-Medium.otf");
+}
+.lightblue{background: #2fc1e6}
+.medblue{background: #1a95ac}
+.darkblue{background: #0f4461}
+.lightyellow{background: #ceb165}
+.darkyellow{background: #a6703f}
+.sand{background: #efddc8}
+body{
+  background-color:#0f4461;
+}
+#content{
+  overflow: auto;
+}
+#navbar a{
+  text-decoration: none;
+}
+#centerbox{
+  margin-bottom:7vh;
+}
+.logo{
+  height:7.5em;
+  width:7.5em;
+  align-self:center;
+  cursor:pointer;
+  border-radius: 10000vw;
+  border-style: solid;
+  border-color: rgba(0,0,0,0);
+}
+.logocont{
+  height:7.6em;
+  width: 7.6em;
+  align-self: center;
+  display: flex;
+}
+#navbar{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+.navbutton{
+  color:#1a95ac;
+  background-color:#ceb165;
+  font-weight:bold;
+  font-size:26px;
+  font-family:"sitefont";
+  text-align:center;
+  width:100px;
+  margin:50px;
+  padding-left:10px;
+  padding-right:10px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  height:50px;
+  border-style:solid;
+  border-width:6px;
+  border-radius:25px;
+  border-color:#0f4461;
+  cursor:pointer;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out,
+                      color 0.2s ease-out;
+}
+.navbutton:hover{
+  font-weight:bold;
+  color:#ceb165;
+  background-color:#1a95ac;
+  cursor:pointer;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out,
+                      color 0.2s ease-out;
+}
+#loggedin{
+  display:none;
+}
+.dropdown{
+  cursor:pointer;
+  color:white;
+  background-color:#1f96ad;
+  font-weight:bold;
+  font-size:22px;
+  font-family:"sitefont";
+  text-align:center;
+  width:100%;
+  margin:0px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  height:50px;
+  border-style:solid;
+  border-width:2px;
+  border-radius:20px;
+  padding-left:10px;
+  padding-right:10px;
+  border-color:white;
+}
+#loggedin div{
+  display:none;
+}
+#loggedin:hover div{
+  display:block;
+  z-index:1;
+}
+#loggedin:hover div p{
+  border-top-right-radius:0px;
+  border-top-left-radius:0px;
+  border-top-width:0px;
+  border-bottom-width:2px;
+  border-bottom-right-radius:20px;
+  border-bottom-left-radius:20px;
+  z-index:1;
+}
+#loggedin:hover p{
+  border-bottom-right-radius:0px;
+  border-bottom-left-radius:0px;
+  border-bottom-width:0px;
+}
+#logout{
+  background-color:rgb(18, 86, 99);
+}
+.stdbutton{
+  font-family:"sitefont";
+  font-size:20px;
+  background-color:rgb(32, 150, 171);
+  color:white;
+  cursor:pointer;
+}

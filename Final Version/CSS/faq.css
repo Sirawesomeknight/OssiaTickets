@@ -1,0 +1,125 @@
+body{
+  padding:0px;
+  margin:0px;
+  font-size:100%;
+  width:100%;
+  min-height:100vh;
+  overflow-x:hidden;
+  overflow-y:auto;
+  display:flex;
+  flex-direction: column;
+}
+#content{
+  background-size:cover;
+  background-attachment:fixed;
+  width:100%;
+  /* height: 83em; */
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  position:relative;
+  overflow: auto;
+}
+#tint{
+  background-color:rgba(15, 68, 97,0.8);
+  z-index: 0;
+  width: 100%;
+  display: inherit;
+  flex-direction: column;
+  height: inherit;
+}
+#centerbox{
+  display:flex;
+  flex-direction:column;
+  height:80%;
+  width:70vw;
+  align-self: center;
+  margin-top: 2vh;
+}
+#faqcontent{
+  padding:40px;
+  padding-top:0px;
+  border-style:solid;
+  border-color:#ceb165;
+  border-width:3px;
+  border-radius:10px;
+  background-color:#1b4559;
+}
+#faqbox{
+  border-style:solid;
+  border-bottom-width:1.5px;
+  border-top-width:1.5px;
+  border-left:0px;
+  border-right:0px;
+  border-color:white;
+  align-self: center;
+  width:65.4vw;
+}
+#faqboxtop{
+  border-style:solid;
+  border-bottom-width:1.5px;
+  border-top-width:0px;
+  border-left:0px;
+  border-right:0px;
+  border-color:white;
+  width:65.4vw;
+  align-self: center;
+}
+#faqboxbottom{
+  border-style:solid;
+  border-bottom-width:0px;
+  border-top-width:1.5px;
+  border-left:0px;
+  border-right:0px;
+  border-color:white;
+  width:65.4vw;
+  align-self: center;
+
+}
+#centerbox p{
+  padding:5px;
+  margin:0px;
+  color:white;
+  font-size:18px;
+  font-family:"sitefont";
+  padding-bottom:20px;
+}
+#centerbox h1{
+  color:white;
+  font-family:"sitefontbold";
+}
+/* #content div{
+  background-color:rgb(32, 150, 171);
+  border-radius:10px;
+  border-color:darkblue;
+  border-width:5px;
+  width:75%;
+  height:auto;
+  margin-top:30px;
+  text-align:left;
+  margin-left:20px;
+} */
+/* @keyframes openfaq{
+  from{height:50px;}
+  to{height:500px;}
+} */
+#centerbox div h2{
+  color:white;
+  text-align:center;
+  padding-left:20px;
+  padding-top:5px;
+  font-family:"sitefont";
+}
+#faqcontent{
+  max-width:100%;
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+/* #content h1{
+  color:white;
+  font-family:"sitefontbold";
+  font-size:80px;
+  padding-left:40px;
+} */

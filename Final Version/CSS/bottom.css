@@ -1,0 +1,92 @@
+#bottom{
+  width:98%;
+  background-color:#0f4461;
+  border-top-style:solid;
+  border-top-color:white;
+  border-top-width:1px;
+  display: flex;
+  flex-direction: column;
+  height:2em;
+  padding-left: 1%;
+  padding-right: 1%;
+  transition: border-color 0.2s ease-out;
+  -webkit-transition: border-color 0.2s ease-out;
+}
+#bottom:hover{
+  border-top-color:#ceb165;
+  transition: border-color 0.2s ease-out;
+  -webkit-transition: border-color 0.2s ease-out;
+}
+#bottom-cont{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+#bottom-cont p{
+  display: flex;
+  color:white;
+  font-family:"sitefont";
+  margin-top:8px;
+  margin-bottom:10px;
+  align-self: center;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+}
+#bottom-cont p:hover{
+  color:#ceb165;
+  cursor: default;
+  transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+}
+#bottom-cont i{
+  color:white;
+  margin-top:8px;
+  margin-bottom:10px;
+  margin-right:12px;
+  align-self: center;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+}
+#bottom-cont i:hover{
+  color:#ceb165;
+  transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  cursor: pointer;
+}
+#bottom-right{
+  min-height:100%;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+}
+#bottom-left{
+  min-height:100%;
+  width: 15%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#bottom-left a{
+  display: flex;
+  color:white;
+  font-family:"sitefont";
+  margin-top:8px;
+  margin-bottom:10px;
+  align-self: center;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+}
+#bottom-left a:hover{
+  color:#ceb165;
+  transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+}
+.fa-facebook{
+  margin-right: 20px;
+}
