@@ -204,7 +204,7 @@ switch(error){
       <br>
       <button type="submit" class="stdbutton">Submit Order</button>
      <script>
-var stripe = Stripe('pk_live_uernK9Jly8uIssvCzYdbS1Ly');
+var stripe = Stripe('pk_test_cH7PZpOvg4z4OU5JFjaEJkC4');
 
 // Create an instance of Elements.
 var elements = stripe.elements();
