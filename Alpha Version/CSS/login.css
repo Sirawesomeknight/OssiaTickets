@@ -1,0 +1,77 @@
+/*
+#a6a6a6 = gray
+1366 by 768
+*/
+body{
+width:100%;
+height:100%;
+padding:0px;
+margin:0px;
+font-size:100%;
+position:absolute;
+}
+h1{
+
+}
+h2{
+
+}
+p{
+font-family:Verdana;
+font-size:100%;
+padding:0px;
+margin:0px;
+}
+#thist{
+color:white;
+}
+#top{
+display:flex;
+width:100%;
+height:15%;
+}
+#logobox{
+width:15rem;
+height:7rem;
+padding:0px;
+}
+#centertop{
+flex:1;
+}
+#adspace1{
+width:100%;
+height:66%;
+background-color:red;
+padding:0px;
+text-align:center;
+}
+#menu{
+width:100%;
+height:34%;
+background-color:blue;
+padding:0px;
+text-align:center;
+}
+#menu button{
+margin-left:5%;
+margin-right:5%;
+}
+#options{
+width:10rem;
+height:7rem;
+background-color:orange;
+padding:0px;
+margin-right:0px;
+text-align:center;
+}
+#center{
+text-align:center;
+}
+#loginbox{
+  padding:10rem;
+  width:30%;
+  margin-left:24rem;
+  margin-top:10rem;
+  background-color:gray;
+  text-align:center;
+}

@@ -1,0 +1,1967 @@
+
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<!-- meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /  -->
+<!-- $Id: commonTop.jsp,v 1.5 2009/03/26 13:00:39 harveycg Exp $ -->
+
+<!-- $Id: studentIndex.jsp,v 1.25 2012/10/03 16:57:54 cintia Exp $ -->
+
+
+  <head>
+<script type="text/javascript" src="../fast/jq.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/fastFrame.js?v=2.1.285"></script>
+<script type="text/javascript">
+fastAllAlertsModal = true;
+</script>
+<script type="text/javascript" src="../fast/jqueryui/js/jquery-ui-1.8.16.custom.min.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/jq.bgiframe.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/jq.form.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/jq.autocomplete.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/jq.jeditable.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/jq.corner.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/jq.autotab.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/jquery.blockUI.js?v=2.1.285"></script>
+<script type="text/javascript">
+$().ajaxStop($.unblockUI);
+$.blockUI.defaults.message = '<img src="../fast/images/busy.gif" alt="busy"/>';
+$.blockUI.defaults.css.border = 'none';
+$.blockUI.defaults.css.backgroundColor = 'transparent';
+$.blockUI.defaults.overlayCSS.opacity = '0.02';
+$.blockUI.defaults.fadeIn = '200';
+$.blockUI.defaults.fadeOut = '400';
+$.blockUI.defaults.baseZ = 2000;
+$.blockUI.defaults.timeout = '120000';
+fastThrobberTimeoutMillis = 120000;
+fastConsoleLogBlocking = false;
+fastDontUseVariableBlockingJs = false;
+</script>
+<script type="text/javascript" src="../fast/dhtmlx/dhtmlxcommon.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/dhtmlx/dhtmlxMenu/dhtmlxmenu.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/dhtmlx/dhtmlxMenu/ext/dhtmlxmenu_ext.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/dhtmlx/dhtmlxCombo/dhtmlxcombo.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/dhtmlx/dhtmlxTabbar/dhtmlxtabbar.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/dhtmlx/dhtmlxTabbar/dhtmlxtabbar_start.js?v=2.1.285"></script>
+<script type="text/javascript" src="../fast/dhtmlx/dhtmlxTabbar/dhtmlxcontainer.js?v=2.1.285"></script>
+<link  type="text/css" href="../fast/dhtmlx/dhtmlxCombo/dhtmlxcombo.css?v=2.1.285" rel="stylesheet"/>
+<link  type="text/css" href="../fast/dhtmlx/dhtmlxTabbar/dhtmlxtabbar.css?v=2.1.285" rel="stylesheet"/>
+<link  type="text/css" href="../fast/dhtmlx/dhtmlxMenu/skins/dhtmlxmenu_dhx_blue.css?v=2.1.285" rel="stylesheet"/>
+<link  type="text/css" href="../fast/fast.css?v=2.1.285" rel="stylesheet"/>
+<link  type="text/css" href="../fast/fastPrint.css?v=2.1.285" rel="stylesheet" media="print"/>
+<link  type="text/css" href="../fast/jqueryui/css/custom-theme/jquery-ui-1.8.16.custom.css?v=2.1.285" rel="stylesheet"/>
+    <!--
+SERVER NAME: fastprod-huge-a-09, realm name: null
+-->
+<script type="text/javascript">
+    fastInactivityTimeoutIntervalMinutes  = 5;
+ </script>
+    <script type="text/javascript">
+      fastAlreadySubmitted=false;
+    </script>
+    <script type="text/javascript">
+  fastIsCheckBrowser = true;
+</script>
+
+<script type="text/javascript">
+	checkToSeeIfUserWantsToKeepSessionTimeout = (1000*60*5)-1000*60*1;
+	sessionTimeoutUserQuestionWindowUrl = '../fast/fastEndSessionQuestion.htm';
+	sessionTimedOutUrl = 'https://pennintouch.apps.upenn.edu/pennInTouch/jsp/fast.do?fastSessionInactive=true';
+	startPageForCookie = 'fast.do';
+	setSessionLengthTimeouts();
+</script>
+
+
+    <!-- $Id: commonHead.jsp,v 1.22 2013/06/12 18:56:32 harveycg Exp $ -->
+<meta http-equiv="Content-Type" content="text/html" />
+<link rel="stylesheet" type="text/css" href="../assets/pennInTouch.css?v=2.1.285" />
+<link rel="stylesheet" type="text/css" media="print" href="../assets/pennInTouchPrint.css?v=2.1.285" />
+<script type="text/javascript" src="../assets/pennInTouch.js?v=2.1.285"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>Penn InTouch</title>
+
+  </head>
+
+
+
+
+
+
+
+
+  <!-- $Id: commonBodyTag.jsp,v 1.11 2010/03/02 14:45:06 harveycg Exp $ -->
+
+
+
+
+<body id="fastBody" style="background-image: url(../fast/images/bgFull.gif); ">
+
+
+
+<script>
+  var fastBlurDiv = document.createElement("div");
+  fastBlurDiv.id = "fastBlurDiv";
+  fastBlurDiv.style.cssText = "position:absolute; top:0; right:0; width:" + screen.width + "px; height:" + screen.height + "px; background-color: #999999; opacity:0.1; filter:alpha(opacity=50)";
+  document.getElementsByTagName("body")[0].appendChild(fastBlurDiv);
+  </script>
+
+
+
+<script type="text/javascript" src="../fast/walterzorn_tooltip.js"></script>
+
+
+<noscript>
+<center><b><font color="red">
+ Javascript has been disabled in your browser. You must enable javascript in order to utilize this application.
+</font></b></center>
+</noscript>
+
+
+
+
+<!-- $Id: commonPageStart.jsp,v 1.104 2013/06/21 13:27:24 cintia Exp $ -->
+
+<link rel="stylesheet" type="text/css" href="../assets/niftyCorners.css">
+<script type="text/javascript" src="../assets/niftycube.js"></script>
+
+<script type="text/javascript">
+NiftyLoad=function(){
+
+  Nifty("td.studentPhotoBottom","medium bottom");
+  Nifty("td.studentRightRailTableHeader","medium top");
+  Nifty("td.roundTableTopText","medium top");
+  Nifty("div.mockScheduleCourseDetailHeader","medium top");
+  Nifty("td.roundTableTopTextWrap","medium top");
+  Nifty("td.roundTableTopTextWrapSelected","medium top");
+  Nifty("td.roundTableTopTabTextWrap","medium top");
+  Nifty("td.roundTableTopTabTextWrapSelected","medium top");
+  Nifty("div.studentRightRailTableHeader","medium top");
+  Nifty("td.roundTableTopTextGrey","medium top");
+  Nifty("div.roundTableTopTextGrey","medium top");
+  Nifty("div.jcarousel-container jcarousel-container-horizontal","medium");
+  Nifty("div.jcarousel-container ","medium");
+  Nifty("div.jcarousel-container-horizontal","medium");
+
+}
+</script>
+
+<script>
+
+function removejscssfile(filename, filetype){
+ var targetelement=(filetype=="js")? "script" : (filetype=="css")? "link" : "none" //determine element type to create nodelist from
+ var targetattr=(filetype=="js")? "src" : (filetype=="css")? "href" : "none" //determine corresponding attribute to test for
+ var allsuspects=document.getElementsByTagName(targetelement)
+ for (var i=allsuspects.length; i>=0; i--){ //search backwards within nodelist for matching elements to remove
+  if (allsuspects[i] && allsuspects[i].getAttribute(targetattr)!=null && allsuspects[i].getAttribute(targetattr).indexOf(filename)!=-1)
+   allsuspects[i].parentNode.removeChild(allsuspects[i]) //remove element by calling parentNode.removeChild()
+ }
+}
+
+
+
+
+
+
+
+config. Delay     = 0;   // Time span in ms until tooltip shows up
+config. Exclusive   = false;   // false or true - no other tooltip can appear until the current one has actively been closed
+config. FadeIn      = 0 ;  // Fade-in duration in ms, e.g. 400; 0 for no animation
+config. FadeOut     = 0;
+config. FadeInterval  = 30;    // Duration of each fade step in ms (recommended: 30) - shorter is smoother but causes more CPU-load
+config. Duration    = 10000;
+
+
+fastMinPopupWidth = 300;
+</script>
+
+
+<div class="fastPrinterFriendlyOnlyBlock" style="text-align: center; clear: both;">
+This page printed on 09/16/2017 08:39:26 PM
+</div>
+
+<table cellspacing="0" cellpadding="0" width="1000" border="0" id="mainTable" style="padding-top: 0px;">
+  <tr valign="top">
+        <td rowspan="3" width="210" id="fastLeftNavCell" style="padding-top: 23px; width:210px !important; max-width: 210px !important;">
+          <table width="209" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td><img src="../fast/images/spacer.gif" width="198" height="1" alt=" " /></td>
+            </tr>
+            <tr>
+              <td><img src="../fast/images/logo.gif" width="175" height="55" alt="Penn" id="fastPennLogo"/>
+                <hr color="#7691d4" width="180" size="1" style="height: 1px;margin-left:10px;" />
+                <a href="fast.do"><img style="margin-left: 10px;" src="../assets/images/pitLogo.gif" border="0" alt="Penn InTouch"/></a>
+              </td>
+            </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="fastMenuLevel1Ul" onclick="return fastEventCancelBubble(event);">
+<li class="fastMenuLevel1ArrowRight" onclick="return fastMenuExpand(event, this, 'TGZR2HHI','TGZR2HHH');">&nbsp;<a href="#" onclick="return false;" style="cursor:pointer;cursor:hand;" class="fastMenuWhiteButton" id="TGZR2HHJ_text"><span class="fastButtonLinkText">Registration & planning</span></a>
+<ul class="fastMenuLevel2Ul" id="TGZR2HHI" onclick="return fastEventCancelBubble(event);" style="display:none;">
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HHL','','TGZR2HHL',false);" class="fastMenuWhiteButton" id="TGZR2HHL_text"><span class="fastButtonLinkText">Academic planning worksheet</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HHN','','TGZR2HHN',false);" class="fastMenuWhiteButton" id="TGZR2HHN_text"><span class="fastButtonLinkText">Course search</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HHP','','TGZR2HHP',false);" class="fastMenuWhiteButton" id="TGZR2HHP_text"><span class="fastButtonLinkText">My mock schedules</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HHR','','TGZR2HHR',false);" class="fastMenuWhiteButton" id="TGZR2HHR_text"><span class="fastButtonLinkText">Register for courses</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HHT','','TGZR2HHT',false);" class="fastMenuWhiteButton" id="TGZR2HHT_text"><span class="fastButtonLinkText">View schedule</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'http://www.upenn.edu/almanac/3yearcal.html','_blank','TGZR2HHV',false);" class="fastMenuWhiteButton" id="TGZR2HHV_text"><span class="fastButtonLinkText">Academic calendar</span></a></li>
+</ul></li>
+<li class="fastMenuLevel1ArrowRight" onclick="return fastMenuExpand(event, this, 'TGZR2HHX','TGZR2HHW');">&nbsp;<a href="#" onclick="return false;" style="cursor:pointer;cursor:hand;" class="fastMenuWhiteButton" id="TGZR2HHY_text"><span class="fastButtonLinkText">Academic records</span></a>
+<ul class="fastMenuLevel2Ul" id="TGZR2HHX" onclick="return fastEventCancelBubble(event);" style="display:none;">
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HH0','','TGZR2HH0',false);" class="fastMenuWhiteButton" id="TGZR2HH0_text"><span class="fastButtonLinkText">View grades</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HH2','','TGZR2HH2',false);" class="fastMenuWhiteButton" id="TGZR2HH2_text"><span class="fastButtonLinkText">Transcript & GPA</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HH4','','TGZR2HH4',false);" class="fastMenuWhiteButton" id="TGZR2HH4_text"><span class="fastButtonLinkText">Order transcripts</span></a></li>
+</ul></li>
+<li class="fastMenuLevel1ArrowRight" onclick="return fastMenuExpand(event, this, 'TGZR2HH6','TGZR2HH5');">&nbsp;<a href="#" onclick="return false;" style="cursor:pointer;cursor:hand;" class="fastMenuWhiteButton" id="TGZR2HH7_text"><span class="fastButtonLinkText">Student billing account</span></a>
+<ul class="fastMenuLevel2Ul" id="TGZR2HH6" onclick="return fastEventCancelBubble(event);" style="display:none;">
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'https://secure.touchnet.net/C21690_tsa/web/caslogin.jsp','_blank','TGZR2HH9',false);" class="fastMenuWhiteButton" id="TGZR2HH9_text"><span class="fastButtonLinkText">View statements & new activity</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'https://secure.touchnet.net/C21690_tsa/web/caslogin.jsp','_blank','TGZR2HIB',false);" class="fastMenuWhiteButton" id="TGZR2HIB_text"><span class="fastButtonLinkText">Pay your bill / Penn.Pay</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'http://www.sfs.upenn.edu/billing/index.htm','_blank','TGZR2HID',false);" class="fastMenuWhiteButton" id="TGZR2HID_text"><span class="fastButtonLinkText">General information</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'https://uatpenn.apps.upenn.edu/uatPenn/jsp/fast.do?fastStart=directdep','_blank','TGZR2HIF',false);" class="fastMenuWhiteButton" id="TGZR2HIF_text"><span class="fastButtonLinkText">Enroll in direct deposit</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'http://www.sfs.upenn.edu/budget-plan/index.htm','_blank','TGZR2HIH',false);" class="fastMenuWhiteButton" id="TGZR2HIH_text"><span class="fastButtonLinkText">Monthly budget plan</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HIJ','','TGZR2HIJ',false);" class="fastMenuWhiteButton" id="TGZR2HIJ_text"><span class="fastButtonLinkText">Federal refund authorization</span></a></li>
+</ul></li>
+<li class="fastMenuLevel1ArrowRight" onclick="return fastMenuExpand(event, this, 'TGZR2HIL','TGZR2HIK');">&nbsp;<a href="#" onclick="return false;" style="cursor:pointer;cursor:hand;" class="fastMenuWhiteButton" id="TGZR2HIM_text"><span class="fastButtonLinkText">Financial aid</span></a>
+<ul class="fastMenuLevel2Ul" id="TGZR2HIL" onclick="return fastEventCancelBubble(event);" style="display:none;">
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'http://www.sfs.upenn.edu/finaid/index.htm','_blank','TGZR2HIO',false);" class="fastMenuWhiteButton" id="TGZR2HIO_text"><span class="fastButtonLinkText">How to apply</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HIQ','','TGZR2HIQ',false);" class="fastMenuWhiteButton" id="TGZR2HIQ_text"><span class="fastButtonLinkText">Application status</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HIS','','TGZR2HIS',false);" class="fastMenuWhiteButton" id="TGZR2HIS_text"><span class="fastButtonLinkText">Financial aid awards</span></a></li>
+</ul></li>
+<li class="fastMenuLevel1ArrowRight" onclick="return fastMenuExpand(event, this, 'TGZR2HIU','TGZR2HIT');">&nbsp;<a href="#" onclick="return false;" style="cursor:pointer;cursor:hand;" class="fastMenuWhiteButton" id="TGZR2HIV_text"><span class="fastButtonLinkText">Student loans</span></a>
+<ul class="fastMenuLevel2Ul" id="TGZR2HIU" onclick="return fastEventCancelBubble(event);" style="display:none;">
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'http://www.sfs.upenn.edu/loans/index.htm','_blank','TGZR2HIX',false);" class="fastMenuWhiteButton" id="TGZR2HIX_text"><span class="fastButtonLinkText">How to apply, lenders, sources...</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'https://loans.apps.upenn.edu/','_blank','TGZR2HIZ',false);" class="fastMenuWhiteButton" id="TGZR2HIZ_text"><span class="fastButtonLinkText">Application status & activity</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HI1','','TGZR2HI1',false);" class="fastMenuWhiteButton" id="TGZR2HI1_text"><span class="fastButtonLinkText">Cumulative borrowing history</span></a></li>
+</ul></li>
+<li class="fastMenuLevel1ArrowRight" onclick="return fastMenuExpand(event, this, 'TGZR2HI3','TGZR2HI2');">&nbsp;<a href="#" onclick="return false;" style="cursor:pointer;cursor:hand;" class="fastMenuWhiteButton" id="TGZR2HI4_text"><span class="fastButtonLinkText">Student employment</span></a>
+<ul class="fastMenuLevel2Ul" id="TGZR2HI3" onclick="return fastEventCancelBubble(event);" style="display:none;">
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'http://www.sfs.upenn.edu/seo','_blank','TGZR2HI6',false);" class="fastMenuWhiteButton" id="TGZR2HI6_text"><span class="fastButtonLinkText">General information</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'http://www.sfs.upenn.edu/seo','_blank','TGZR2HI8',false);" class="fastMenuWhiteButton" id="TGZR2HI8_text"><span class="fastButtonLinkText">Job search</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJA','','TGZR2HJA',false);" class="fastMenuWhiteButton" id="TGZR2HJA_text"><span class="fastButtonLinkText">Work-study award & earnings</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'https://uatpenn.apps.upenn.edu/uatPenn/jsp/fast.do?fastStart=directdep','_blank','TGZR2HJC',false);" class="fastMenuWhiteButton" id="TGZR2HJC_text"><span class="fastButtonLinkText">Enroll in direct deposit</span></a></li>
+</ul></li>
+<li class="fastMenuLevel1ArrowRight" onclick="return fastMenuExpand(event, this, 'TGZR2HJE','TGZR2HJD');">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJF','','TGZR2HJF',false);" style="cursor:pointer;cursor:hand;" class="fastMenuWhiteButton" id="TGZR2HJF_text"><span class="fastButtonLinkText">Student housing</span></a>
+<ul class="fastMenuLevel2Ul" id="TGZR2HJE" onclick="return fastEventCancelBubble(event);" style="display:none;">
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'https://webfm1.fres.upenn.edu/ff/Jsp/WebFmPenn.jsp','_blank','TGZR2HJH',false);" class="fastMenuWhiteButton" id="TGZR2HJH_text"><span class="fastButtonLinkText">Maintenance request (AiM)</span></a></li>
+</ul></li>
+<li class="fastMenuLevel1ArrowRight" onclick="return fastMenuExpand(event, this, 'TGZR2HJJ','TGZR2HJI');">&nbsp;<a href="#" onclick="return false;" style="cursor:pointer;cursor:hand;" class="fastMenuWhiteButton" id="TGZR2HJK_text"><span class="fastButtonLinkText">Profile, privacy & emergency</span></a>
+<ul class="fastMenuLevel2Ul" id="TGZR2HJJ" onclick="return fastEventCancelBubble(event);" style="display:none;">
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJM','','TGZR2HJM',false);" class="fastMenuWhiteButton" id="TGZR2HJM_text"><span class="fastButtonLinkText">Emergency contact</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'http://www.publicsafety.upenn.edu/pennguardian/','_blank','TGZR2HJO',false);" class="fastMenuWhiteButton" id="TGZR2HJO_text"><span class="fastButtonLinkText">Penn guardian</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJQ','','TGZR2HJQ',false);" class="fastMenuWhiteButton" id="TGZR2HJQ_text"><span class="fastButtonLinkText">Share academic/financial info</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJS','','TGZR2HJS',false);" class="fastMenuWhiteButton" id="TGZR2HJS_text"><span class="fastButtonLinkText">Address information</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'https://affiliateBioInfo.apps.upenn.edu/','_blank','TGZR2HJU',false);" class="fastMenuWhiteButton" id="TGZR2HJU_text"><span class="fastButtonLinkText">Personal profile</span></a></li>
+</ul></li>
+<li class="fastMenuLevel1ArrowRight" onclick="return fastMenuExpand(event, this, 'TGZR2HJW','TGZR2HJV');">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJX','','TGZR2HJX',false);" style="cursor:pointer;cursor:hand;" class="fastMenuWhiteButton" id="TGZR2HJX_text"><span class="fastButtonLinkText">Course absence reports</span></a>
+<ul class="fastMenuLevel2Ul" id="TGZR2HJW" onclick="return fastEventCancelBubble(event);" style="display:none;">
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJZ','','TGZR2HJZ',false);" class="fastMenuWhiteButton" id="TGZR2HJZ_text"><span class="fastButtonLinkText">Create new report</span></a></li>
+<li class="fastMenuLevel2">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJ1','','TGZR2HJ1',false);" class="fastMenuWhiteButton" id="TGZR2HJ1_text"><span class="fastButtonLinkText">Review submitted reports</span></a></li>
+</ul></li>
+<li class="fastMenuLevel1">&nbsp;<a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJ3','','TGZR2HJ3',false);" class="fastMenuWhiteButton" id="TGZR2HJ3_text"><span class="fastButtonLinkText">Verify my information</span></a></li>
+<li class="fastMenuLevel1">&nbsp;<a href="#" onclick="return false;" style="cursor:default;" class="fastMenuYellowButton" id="TGZR2HJ5_text"><span class="fastButtonLinkText">Return to front page</span></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+                <table class="studentPhotoTable" width="170" cellpadding="0" cellspacing="0" style="margin-top:20px;">
+                <tr>
+                <td colspan="2">
+                    <div class="studentRightRailTableHeader" style="text-align: center; white-space:nowrap; overflow:hidden; width: 170px;">
+                      Hulsizer, James W
+                    </div>
+                    <div class="studentRightRailTableData" style="text-align: center; margin-bottom:0px; width: 170px;">
+
+
+                            <img width="120" height="150" border="0"  alt="User photo" src="https://medley.isc-seo.upenn.edu/fastPdfServiceProd2/jsp/fast.do?webService=qw&k=27905323AAAILgAAJAAA51WAAB" />
+
+
+                    </div>
+                  </td>
+                 </tr>
+                <td>
+                  Penn ID <span class="lightBlueLink">27905323</span>
+                </td>
+                </table>
+
+
+
+
+
+
+                              <table class="studentLeftRailData" style="width: 180px;margin-left:10px;" border="0" cellpadding="0" cellspacing="0">
+
+
+                  <tr>
+                    <td>
+                      <div style="color:gold; margin-bottom:15px;">Fall 2017</div>
+                     </td>
+                  </tr>
+
+
+
+
+                <tr>
+                  <td width="50%">Division</td>
+                  <td width="50%">Degree</td>
+                </tr>
+                <tr>
+                  <td class="studentLeftRailDataEntry">
+                    <span onmouseout="UnTip()" onmouseover="Tip('College of Arts &amp; Sciences', LEFT, true, FADEIN, 300, WIDTH, 100, FONTSIZE, '9px')">
+                      COL
+                    </span>
+                  </td>
+                  <td class="studentLeftRailDataEntry">
+                    <span onmouseout="UnTip()" onmouseover="Tip('Bachelor of Arts', LEFT, true, FADEIN, 300, WIDTH, 100, FONTSIZE, '9px')">
+                      BA
+                     </span>
+	               </td>
+                </tr>
+
+                <tr>
+                  <td>Major</td>
+                  <td>Concentration</td></tr>
+                <tr>
+                  <td class="studentLeftRailDataEntry">
+
+                        <span onmouseout="UnTip()" onmouseover="Tip('Undeclared', LEFT, true, FADEIN, 300, WIDTH, 100, FONTSIZE, '9px')">
+                          UNDC
+                        </span>
+                        <br/>
+
+                  </td>
+                  <td class="studentLeftRailDataEntry">
+
+                      <span onmouseout="UnTip()" onmouseover="Tip('', LEFT, true, FADEIN, 300, WIDTH, 100, FONTSIZE, '9px')">
+                        <br/>
+                      </span>
+
+                  </td>
+                </tr>
+
+
+
+
+
+                <tr>
+                  <td>Exp grad</td>
+                  <td>Spec pgm</td>
+                </tr>
+                <tr>
+                  <td class="studentLeftRailDataEntry">
+                    Spring 2021
+                  </td>
+                  <td class="studentLeftRailDataEntry">
+                    <span onmouseout="UnTip()" onmouseover="Tip('', LEFT, true, FADEIN, 300, WIDTH, 100, FONTSIZE, '9px')">
+
+                     </span>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="studentLeftRailData" style="width: 180px; margin-left:10px;" border="0" cellpadding="0" cellspacing="0">
+
+                  <tr>
+                  <td>
+
+                        Academic Advisor,
+                         COL
+
+
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="studentLeftRailDataEntry">
+                        <a href="mailto:GANGULEE@SAS.UPENN.EDU">Gangulee, Srilata </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                  <td>
+
+                        College Contact,
+                         COL
+
+
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="studentLeftRailDataEntry">
+                        <a href="mailto:GANGULEE@SAS.UPENN.EDU">Gangulee, Srilata </a>
+                    </td>
+                  </tr>
+
+
+              </table>
+
+
+
+
+
+
+
+
+        <table class="studentLeftRailData" style="width: 180px; margin-left:10px;" border="0" cellpadding="0" cellspacing="0">
+           <tr>
+            <td>Financial Aid Consultant</td>
+           </tr>
+           <tr>
+            <td class="studentLeftRailDataEntry">
+              <a href="mailto:sfsmail@pobox.upenn.edu?subject=Question for  Elvira Cruz">Elvira Cruz</a>
+            </td>
+           </tr>
+
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </td>
+
+
+    <td class="whiteLink" width="745" height="20" style="background-color:#7794c9; padding-top: 4px; width:745px !important; height: 20px !important; white-space: nowrap; vertical-align: text-top; font-size: 11px; font-weight: bold;">
+      <div style="margin-left:10px;">
+
+
+
+
+
+                          <a href="/pennInTouch/jsp/fast.do?fastStart=home">Home</a>
+
+
+
+
+                   <span style="font-weight:normal;">|</span> <a href="/pennInTouch/jsp/fast2.do?fastStart=mobile">Mobile</a>
+
+
+
+
+
+        <span style="font-weight:normal;">|</span> <a href="http://www.sfs.upenn.edu/intouch/help/pit-help.htm" target="_new"><span style="color:maroon">HELP</span></a>
+        <span style="font-weight:normal;">|</span> <a href="http://www.upenn.edu/registrar" target="_new">Registrar</a>
+        <span style="font-weight:normal;">|</span> <a href="http://www.sfs.upenn.edu" target="_new">Student Financial Services</a>
+        <span style="font-weight:normal;">|</span> <a href="http://www.sfs.upenn.edu" target="_new">askBEN</a>
+        <span style="font-weight:normal;">|</span> <a href="http://campusexpress.upenn.edu" target="_new">Campus Express</a>
+        <span style="font-weight:normal;">|</span> <a href="https://medley.isc-seo.upenn.edu/penn_portal/portalli.php">PennPortal</a>
+        <span style="font-weight:normal;">|</span> <a href="http://www.sfs.upenn.edu/intouch/contacts.htm" target="_new">Contact us</a>
+
+
+
+
+
+
+
+
+      </div>
+    </td>
+
+
+    <td width="40" align="left" id="fastTopNavRight" class="whiteLink" style="background-color:#7794c9; text-align:left; white-space: nowrap; padding-top:4px; padding-right:10px;">
+        <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJ6','','TGZR2HJ6',false);" title="End your session with this application, then optionally end your PennKey Single Sign-On (SSO) session" class="fastWhitelinkButton" id="TGZR2HJ6_text"><span class="fastButtonLinkText" title="End your session with this application, then optionally end your PennKey Single Sign-On (SSO) session">Log out</span></a>
+    </td>
+
+
+
+   </tr>
+  <tr valign="top">
+    <td id="fastBodyCell" colspan="2" class=""
+      style="margin-top: 0px; padding-left: 0px; margin-left: 0px; padding-top: 7px;height:900px;">
+
+    <div id="statusFrame" name="statusFrame" style="margin-left:10px; padding: 5px 5px 5px 5px; height: 100px; width: 770px; border-style: solid; border-width: 1px; border-color: red; display: none; margin: 5px 5px 5px 5px;">
+      <div style="font-size: 25px; color: red; font-weight: bold; float: left; width:180px">
+        ATTENTION:
+      </div>
+
+      <div id="statusFrameInner" style="margin-left: 10px; float: left; width:570px; color: red; font-weight: bold;">
+      </div>
+    </div>
+
+    <div style="clear: all; width: 770px;">&nbsp;</div>
+
+
+
+    <div style="margin-left:10px;">
+
+
+
+
+
+
+
+    </div>
+
+
+  <script>
+    updateStatus();
+    window.setInterval('updateStatus()', 60*1000);
+  </script>
+
+
+<!-- $Id: commonPageStart.jsp,v 1.104 2013/06/21 13:27:24 cintia Exp $ -->
+
+<div class="headerRed" style="width:580px; padding-top:0px; padding-bottom: 10px; font-size: 17px; margin-left:10px;">
+    Front page
+</div>
+
+
+
+
+
+
+
+<table width="785" border="0"  cellpadding="0" style="margin-left:10px">
+  <tr>
+
+
+
+
+
+        <td valign="top" width="580">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <table width="580" cellpadding="0" cellspacing="0">
+      <tr>
+      <td>
+        <div class="headerRed"  style="padding-top:0px;">
+        Announcements
+        </div>
+       </td>
+       <td align="right">
+
+
+
+         </td>
+        </tr>
+       </table>
+
+
+        <div style="margin-left: 5px; width:580px; margin-bottom: 15px;">
+
+
+
+
+
+
+
+              <li class="messageLi"><b>The </b>
+
+
+
+          <span class="messageBody">
+            <font color=black><b><a href="https://www.publicsafety.upenn.edu/pennready/upennalert/" target=new>UPennAlert Emergency Notification System</a></b> enables the University to quickly notify the Penn community of critical information during an emergency via a variety of methods all year round.</font>
+
+
+
+
+                  <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HJ7','','TGZR2HJ7',false);" id="TGZR2HJ7_text"><span class="fastButtonLinkText"> more...</span></a>
+                  <div class="messageMore"  id="29935650" style="display:none">
+                    To receive this information via text message, please keep your <a href="https://pennintouch.apps.upenn.edu/pennInTouch/jsp/fast.do?fastStart=explicit&page=emergencyContact">emergency contact</a> information up to date.<hr>You may also be interested in enrolling in Penn Guardian App, a free profile service that allows Penn community members to enter information, such as a medical condition, that would be helpful to PennComm dispatchers if you call for assistance. Please visit the DPS website for more information: <a href="http://www.publicsafety.upenn.edu/pennguardian/" target=new>www.publicsafety.upenn.edu/pennguardian</a>.
+                  </div>
+
+
+
+
+
+
+
+          </span>
+
+          </li>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+       <div style="width: 580px;clear:both; margin-bottom: 15px;">
+
+            <table width="580" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+            <td valign="top">
+                <form onsubmit="return false;" name="bogus" id="bogus" method="post" action="fast2.do">
+<input type="hidden" name="fastButtonId" />
+
+                    <span  class="headerRed">Class schedule for </span>
+
+                     <select id="TGZR2HKA" onclick="fastClearThisSelectError(this)" name="TGZR2HJ9" onchange="return fastElementChange(event, 'TGZR2HKB', 'bogus', 'bogus', false, null, 'TGZR2HJ9', 'onchange', false, true, this);" class="fastFormField" ><option value="$fastNull$" >Choose term</option>
+<option value="2017C"  selected="selected">Fall 2017</option>
+</select>
+                </form>
+            </td>
+            <td align="right" valign="top" rowspan="2">
+
+
+
+
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                <td valign="top" style="padding-right:5px;">
+                Class schedule<br/>
+                <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKD','','TGZR2HKD',false);" name="hideShowScheduleButton" id="TGZR2HKD_text"><span class="fastButtonLinkText">show schedule</span></a>
+
+
+                          <br/>
+
+ <form name="bandnform" action="https://secure.bncollege.com/webapp/wcs/stores/servlet/TBListView?" method="post" target="_bAndNWindow">
+  <input type="hidden" name="catalogId" value="10001"/>
+  <input type="hidden" name="storeId" value="10056"/>
+  <input type="hidden" name="courseXml" value='<?xml version="1.0" encoding="UTF-8"?><textbookorder><courses><course dept="ASTR" num="001" sect="003" term="F17" /><course dept="INTG" num="001" sect="001" term="F17" /><course dept="INTG" num="001" sect="303" term="F17" /><course dept="WRIT" num="073" sect="304" term="F17" /></courses></textbookorder>'/>
+  <a href="javascript:void(0);" onclick="document.bandnform.submit();return false;"><span class="fastButtonLinkText">order textbooks</span></a>
+
+  </form>
+
+
+                 </td>
+                 <td valign="top">
+                 <a href="javascript:void(0);" onclick="document.getElementsByName('hideShowScheduleButton')[0].onclick();return false">
+
+                 <img  height="43" src="fast.png?fastWebService=image&amp;id=TGZR2HKF" width="100" border="0"  />
+
+                    </a>
+                  </td>
+                  </tr>
+                  </table>
+
+
+
+
+
+            </td>
+            </tr>
+            <tr>
+            <td style="padding-left:0px;">
+                <!--  %@ include file="../assetsJsp/advisorsList.jsp" %  -->
+            </td>
+            </tr>
+            </table>
+      </div>
+
+          <div class="borderedSchedule"  id="showFullSchedule2017Cfalsetruefalse0" style="display:none">
+
+
+<div style="margin-bottom: 5px;">
+
+    <img  usemap="#scheduleMap" height="244" src="fast.png?fastWebService=image&amp;id=TGZR2HKG" width="566" border="0"  />
+
+   <map name="scheduleMap">
+
+
+      <area onclick="document.getElementsByName('ASTR 001 003')[0].onclick();"
+      shape="rect" coords="158,127,258,175"
+      onmouseout="UnTip()" onmouseover="Tip('ASTR 001 003&lt;br/&gt;Survey of the Universe&lt;br/&gt;Lecture&lt;br/&gt;DRLB A2&lt;br/&gt;01:30 PM-03:00 PM&lt;br/&gt;08/29/2017-12/11/2017&lt;br/&gt;Click for details. &lt;br/&gt;', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')"/>
+
+      <area onclick="document.getElementsByName('ASTR 001 003')[0].onclick();"
+      shape="rect" coords="362,127,462,175"
+      onmouseout="UnTip()" onmouseover="Tip('ASTR 001 003&lt;br/&gt;Survey of the Universe&lt;br/&gt;Lecture&lt;br/&gt;DRLB A2&lt;br/&gt;01:30 PM-03:00 PM&lt;br/&gt;08/29/2017-12/11/2017&lt;br/&gt;Click for details. &lt;br/&gt;', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')"/>
+
+      <area onclick="document.getElementsByName('INTG 001 001')[0].onclick();"
+      shape="rect" coords="158,31,258,79"
+      onmouseout="UnTip()" onmouseover="Tip('INTG 001 001&lt;br/&gt;Integrated Studies I: Decisions and Learning&lt;br/&gt;Lecture&lt;br/&gt;ARCH 208&lt;br/&gt;10:30 AM-12:00 PM&lt;br/&gt;08/29/2017-12/11/2017&lt;br/&gt;Click for details. &lt;br/&gt;', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')"/>
+
+      <area onclick="document.getElementsByName('INTG 001 001')[0].onclick();"
+      shape="rect" coords="158,175,258,223"
+      onmouseout="UnTip()" onmouseover="Tip('INTG 001 001&lt;br/&gt;Integrated Studies I: Decisions and Learning&lt;br/&gt;Lecture&lt;br/&gt;ARCH 208&lt;br/&gt;03:00 PM-04:30 PM&lt;br/&gt;08/29/2017-12/11/2017&lt;br/&gt;Click for details. &lt;br/&gt;', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')"/>
+
+      <area onclick="document.getElementsByName('INTG 001 001')[0].onclick();"
+      shape="rect" coords="362,31,462,79"
+      onmouseout="UnTip()" onmouseover="Tip('INTG 001 001&lt;br/&gt;Integrated Studies I: Decisions and Learning&lt;br/&gt;Lecture&lt;br/&gt;ARCH 208&lt;br/&gt;10:30 AM-12:00 PM&lt;br/&gt;08/29/2017-12/11/2017&lt;br/&gt;Click for details. &lt;br/&gt;', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')"/>
+
+      <area onclick="document.getElementsByName('INTG 001 303')[0].onclick();"
+      shape="rect" coords="464,47,564,79"
+      onmouseout="UnTip()" onmouseover="Tip('INTG 001 303&lt;br/&gt;Integrated Studies I: Decisions and Learning&lt;br/&gt;Seminar&lt;br/&gt;COHN 392&lt;br/&gt;11:00 AM-12:00 PM&lt;br/&gt;08/29/2017-12/11/2017&lt;br/&gt;Click for details. &lt;br/&gt;', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')"/>
+
+      <area onclick="document.getElementsByName('WRIT 073 304')[0].onclick();"
+      shape="rect" coords="56,79,156,111"
+      onmouseout="UnTip()" onmouseover="Tip('WRIT 073 304&lt;br/&gt;Writing Seminar in Phil: Time Travel&lt;br/&gt;Seminar&lt;br/&gt;MCNB 110&lt;br/&gt;12:00 PM-01:00 PM&lt;br/&gt;08/29/2017-12/11/2017&lt;br/&gt;Click for details. &lt;br/&gt;', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')"/>
+
+      <area onclick="document.getElementsByName('WRIT 073 304')[0].onclick();"
+      shape="rect" coords="260,79,360,111"
+      onmouseout="UnTip()" onmouseover="Tip('WRIT 073 304&lt;br/&gt;Writing Seminar in Phil: Time Travel&lt;br/&gt;Seminar&lt;br/&gt;MCNB 110&lt;br/&gt;12:00 PM-01:00 PM&lt;br/&gt;08/29/2017-12/11/2017&lt;br/&gt;Click for details. &lt;br/&gt;', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')"/>
+
+      <area onclick="document.getElementsByName('WRIT 073 304')[0].onclick();"
+      shape="rect" coords="464,79,564,111"
+      onmouseout="UnTip()" onmouseover="Tip('WRIT 073 304&lt;br/&gt;Writing Seminar in Phil: Time Travel&lt;br/&gt;Seminar&lt;br/&gt;MCNB 110&lt;br/&gt;12:00 PM-01:00 PM&lt;br/&gt;08/29/2017-12/11/2017&lt;br/&gt;Click for details. &lt;br/&gt;', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')"/>
+
+
+  </map>
+
+
+</div>
+
+
+
+
+
+      <div style="margin-bottom: 5px; margin-left:5px;">
+        <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKH','','TGZR2HKH',false);" id="TGZR2HKH_text"><span class="fastButtonLinkText">Show schedule details</span></a><span style="width:60px;">&nbsp;&nbsp;&nbsp;</span>
+
+
+
+
+
+                    <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKJ','fastSameTarget','TGZR2HKJ',false);" id="TGZR2HKJ_text"><span class="fastButtonLinkText">Export as iCalendar</span></a><span style="width:60px;">&nbsp;&nbsp;&nbsp;</span>
+
+
+
+
+
+                      <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKK','fastSameTarget','TGZR2HKK',false);" id="TGZR2HKK_text"><span class="fastButtonLinkText">Save image</span></a><span style="width:60px;">&nbsp;&nbsp;&nbsp;</span>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+    <div  id="additionalScheduleDetails2017Cfalsetruefalse0" style="display:none">
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div style="width:510px; clear:all; height: 1px;"></div>
+
+
+
+
+
+      <div style="float: left;clear: left;">
+
+
+
+        <div class="mockScheduleCourseDetailHeader" style="font-size:12px; background-repeat: repeat-x; background-image:url(../assets/images/fff896.png);">
+
+          <div>
+                            <span onmouseout="UnTip()" onmouseover="Tip('Click for details', LEFT, true, FADEIN, 300, WIDTH, 100, FONTSIZE, '9px', DURATION, 1000)">
+                             <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKL','','TGZR2HKL',false);" name="ASTR 001 003" id="TGZR2HKL_text"><span class="fastButtonLinkText">ASTR-001-003</span></a>
+                             </span>
+
+
+
+                               <span onmouseout="UnTip()" onmouseover="Tip('Click to open additional course information in a new window.', LEFT, true, FADEIN, 300, WIDTH, 0, HEIGHT, 0, FONTSIZE, '9px', DURATION, 10000)"><a href="https://upenn.instructure.com/courses/1370631" target="_new"><img src="../assets/images/externalLink.gif" align="top" width="14" height="14" border="0">&nbsp;</a></span>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+        <div class="mockScheduleCourseDetailBody" style="height: 70px !important; overflow: auto; background-color: #fff896;">
+            Survey of the Universe
+
+          	<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div style="white-space: nowrap; width:210px; clear:left">
+
+            <div style="white-space: nowrap; float: left; width:40px;">TR</div>
+            <div style="white-space: nowrap; float: left; width:52px;">01:30 PM-</div>
+            <div style="white-space: nowrap; float: left; width:50px;">03:00 PM;</div>
+
+
+
+
+
+
+                    <div style="white-space: nowrap; float: left; width:35px;" class="textWithTip" onmouseout="UnTip()" onmouseover="Tip('Full name: David Rittenhouse Laboratory&lt;br/&gt;Click for details', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')">
+                      <a href="javascript: openWindow('http://www.facilities.upenn.edu/maps/locations/david-rittenhouse-laboratory', 'BuildingHome', 'scrollbars=1,status=1,toolbar=1,menubar=1,resizable=1,width=1000,height=700');">
+                       DRLB</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+           <div style="white-space: nowrap; float:left; width:25px;">
+              A2
+           </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+            <div style="clear:left">
+
+            1 CU;
+            Lecture;
+
+
+
+                                            08/29/2017
+                                            - 12/11/2017
+
+
+          </div>
+
+
+
+                <div style="">
+                <div style="width:60px;float:left;">
+                Instructors:
+                </div>
+                <div style="float:left; ">
+                Gary M. Bernstein
+                </div>
+                </div>
+                <div style="clear:left;"></div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div style="float: left;">
+
+
+
+        <div class="mockScheduleCourseDetailHeader" style="font-size:12px; background-repeat: repeat-x; background-image:url(../assets/images/ffd7e1.png);">
+
+          <div>
+                            <span onmouseout="UnTip()" onmouseover="Tip('Click for details', LEFT, true, FADEIN, 300, WIDTH, 100, FONTSIZE, '9px', DURATION, 1000)">
+                             <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKN','','TGZR2HKN',false);" name="INTG 001 001" id="TGZR2HKN_text"><span class="fastButtonLinkText">INTG-001-001</span></a>
+                             </span>
+
+
+
+                               <span onmouseout="UnTip()" onmouseover="Tip('Click to open additional course information in a new window.', LEFT, true, FADEIN, 300, WIDTH, 0, HEIGHT, 0, FONTSIZE, '9px', DURATION, 10000)"><a href="https://upenn.instructure.com/courses/1369673" target="_new"><img src="../assets/images/externalLink.gif" align="top" width="14" height="14" border="0">&nbsp;</a></span>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+        <div class="mockScheduleCourseDetailBody" style="height: 70px !important; overflow: auto; background-color: #ffd7e1;">
+            Integrated Studies I: Decisions and Learning
+
+          	<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div style="white-space: nowrap; width:210px; clear:left">
+
+            <div style="white-space: nowrap; float: left; width:40px;">TR</div>
+            <div style="white-space: nowrap; float: left; width:52px;">10:30 AM-</div>
+            <div style="white-space: nowrap; float: left; width:50px;">12:00 PM;</div>
+
+
+
+
+
+
+                    <div style="white-space: nowrap; float: left; width:35px;" class="textWithTip" onmouseout="UnTip()" onmouseover="Tip('Full name: Arts, Research, & Culture (3601 Locust Walk)&lt;br/&gt;Click for details', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')">
+                      <a href="javascript: openWindow('http://www.facilities.upenn.edu/maps/locations/arch', 'BuildingHome', 'scrollbars=1,status=1,toolbar=1,menubar=1,resizable=1,width=1000,height=700');">
+                       ARCH</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+           <div style="white-space: nowrap; float:left; width:25px;">
+              208
+           </div>
+
+  </div>
+
+
+
+
+
+	<div style="white-space: nowrap; width:210px; clear:left">
+
+            <div style="white-space: nowrap; float: left; width:40px;">T</div>
+            <div style="white-space: nowrap; float: left; width:52px;">03:00 PM-</div>
+            <div style="white-space: nowrap; float: left; width:50px;">04:30 PM;</div>
+
+
+
+
+
+
+                    <div style="white-space: nowrap; float: left; width:35px;" class="textWithTip" onmouseout="UnTip()" onmouseover="Tip('Full name: Arts, Research, & Culture (3601 Locust Walk)&lt;br/&gt;Click for details', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')">
+                      <a href="javascript: openWindow('http://www.facilities.upenn.edu/maps/locations/arch', 'BuildingHome', 'scrollbars=1,status=1,toolbar=1,menubar=1,resizable=1,width=1000,height=700');">
+                       ARCH</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+           <div style="white-space: nowrap; float:left; width:25px;">
+              208
+           </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+            <div style="clear:left">
+
+            2 CU;
+            Lecture;
+
+
+
+                                            08/29/2017
+                                            - 12/11/2017
+
+
+          </div>
+
+
+
+                <div style="">
+                <div style="width:60px;float:left;">
+                Instructors:
+                </div>
+                <div style="float:left; ">
+                Karen E. Detlefsen,<br/>Joseph W. Kable
+                </div>
+                </div>
+                <div style="clear:left;"></div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+          <div style="width:510px; clear:all; height: 1px;"></div>
+
+
+
+
+
+      <div style="float: left;clear: left;">
+
+
+
+        <div class="mockScheduleCourseDetailHeader" style="font-size:12px; background-repeat: repeat-x; background-image:url(../assets/images/d2e1ff.png);">
+
+          <div>
+                            <span onmouseout="UnTip()" onmouseover="Tip('Click for details', LEFT, true, FADEIN, 300, WIDTH, 100, FONTSIZE, '9px', DURATION, 1000)">
+                             <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKP','','TGZR2HKP',false);" name="INTG 001 303" id="TGZR2HKP_text"><span class="fastButtonLinkText">INTG-001-303</span></a>
+                             </span>
+
+
+
+                               <span onmouseout="UnTip()" onmouseover="Tip('Click to open additional course information in a new window.', LEFT, true, FADEIN, 300, WIDTH, 0, HEIGHT, 0, FONTSIZE, '9px', DURATION, 10000)"><a href="https://upenn.instructure.com/courses/1369673" target="_new"><img src="../assets/images/externalLink.gif" align="top" width="14" height="14" border="0">&nbsp;</a></span>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+        <div class="mockScheduleCourseDetailBody" style="height: 70px !important; overflow: auto; background-color: #d2e1ff;">
+            Integrated Studies I: Decisions and Learning
+
+          	<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div style="white-space: nowrap; width:210px; clear:left">
+
+            <div style="white-space: nowrap; float: left; width:40px;">F</div>
+            <div style="white-space: nowrap; float: left; width:52px;">11:00 AM-</div>
+            <div style="white-space: nowrap; float: left; width:50px;">12:00 PM;</div>
+
+
+
+
+
+
+                    <div style="white-space: nowrap; float: left; width:35px;" class="textWithTip" onmouseout="UnTip()" onmouseover="Tip('Full name: Claudia Cohen Hall&lt;br/&gt;Click for details', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')">
+                      <a href="javascript: openWindow('http://www.facilities.upenn.edu/maps/locations/cohen-hall-claudia', 'BuildingHome', 'scrollbars=1,status=1,toolbar=1,menubar=1,resizable=1,width=1000,height=700');">
+                       COHN</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+           <div style="white-space: nowrap; float:left; width:25px;">
+              392
+           </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+            <div style="clear:left">
+
+            0 CU;
+            Seminar;
+
+
+
+                                            08/29/2017
+                                            - 12/11/2017
+
+
+          </div>
+
+
+
+                <div style="">
+                <div style="width:60px;float:left;">
+                Instructors:
+                </div>
+                <div style="float:left; ">
+                Raphael Krut-Landau
+                </div>
+                </div>
+                <div style="clear:left;"></div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div style="float: left;">
+
+
+
+        <div class="mockScheduleCourseDetailHeader" style="font-size:12px; background-repeat: repeat-x; background-image:url(../assets/images/ffd7b4.png);">
+
+          <div>
+                            <span onmouseout="UnTip()" onmouseover="Tip('Click for details', LEFT, true, FADEIN, 300, WIDTH, 100, FONTSIZE, '9px', DURATION, 1000)">
+                             <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKR','','TGZR2HKR',false);" name="WRIT 073 304" id="TGZR2HKR_text"><span class="fastButtonLinkText">WRIT-073-304</span></a>
+                             </span>
+
+
+
+                               <span onmouseout="UnTip()" onmouseover="Tip('Click to open additional course information in a new window.', LEFT, true, FADEIN, 300, WIDTH, 0, HEIGHT, 0, FONTSIZE, '9px', DURATION, 10000)"><a href="https://upenn.instructure.com/courses/1374163" target="_new"><img src="../assets/images/externalLink.gif" align="top" width="14" height="14" border="0">&nbsp;</a></span>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+        <div class="mockScheduleCourseDetailBody" style="height: 70px !important; overflow: auto; background-color: #ffd7b4;">
+            Writing Seminar in Phil: Time Travel
+
+          	<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div style="white-space: nowrap; width:210px; clear:left">
+
+            <div style="white-space: nowrap; float: left; width:40px;">MWF</div>
+            <div style="white-space: nowrap; float: left; width:52px;">12:00 PM-</div>
+            <div style="white-space: nowrap; float: left; width:50px;">01:00 PM;</div>
+
+
+
+
+
+
+                    <div style="white-space: nowrap; float: left; width:35px;" class="textWithTip" onmouseout="UnTip()" onmouseover="Tip('Full name: McNeil Building&lt;br/&gt;Click for details', LEFT, true, FADEIN, 300, WIDTH, 200, FONTSIZE, '9px')">
+                      <a href="javascript: openWindow('http://www.facilities.upenn.edu/maps/locations/mcneil-building', 'BuildingHome', 'scrollbars=1,status=1,toolbar=1,menubar=1,resizable=1,width=1000,height=700');">
+                       MCNB</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+           <div style="white-space: nowrap; float:left; width:25px;">
+              110
+           </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+            <div style="clear:left">
+
+            1 CU;
+            Seminar;
+
+
+
+                                            08/29/2017
+                                            - 12/11/2017
+
+
+          </div>
+
+
+
+                <div style="">
+                <div style="width:60px;float:left;">
+                Instructors:
+                </div>
+                <div style="float:left; ">
+                Lucas Dunlap
+                </div>
+                </div>
+                <div style="clear:left;"></div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+<div style="width:550px;clear:left; margin-left:5px; margin-bottom:5px;">
+
+
+
+</div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+          </div>
+          <p/>
+
+
+
+
+
+
+
+<table width="580" class="roundTableTop" style="clear: left;" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="roundTableTopTextGrey">
+      <div class="headerRed" style="float:left; width:300px; padding-top:0px; padding-bottom: 0px;">
+      Important dates and deadlines
+      </div>
+      <div class="headerBlue" style=" text-align:right; float:left; width:260px; padding-top:0px; padding-bottom: 0px;">
+      <a href="http://www.upenn.edu/almanac/3yearcal.html" target="_new">View 3-year academic calendar</a>
+      </div>
+</td>
+</tr>
+</table>
+
+
+<table width="580" style="border: 1px; border-style: solid; border-color: #DDDDDD;">
+    <tr>
+    <td>
+          <div style="margin-left: 0px; width:571px; float:left; padding-top:0px; padding-bottom: 0px;">
+          <table cellpadding="0" cellspacing="0" border="0" width="571">
+
+
+
+
+
+
+
+
+
+
+
+              <tr>
+
+
+
+
+            <td valign="top" width="180" style="white-space: nowrap;">
+            <b>September 18 (Mon)</b>&nbsp;
+            </td>
+            <td valign="top">
+            <div class="messageBody">
+              Course Selection Period ends for undergraduates at midnight<br>
+This is the last day to add or drop courses for LPS, graduate and professional students using Penn InTouch.</b>
+
+
+
+                    <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKT','','TGZR2HKT',false);" id="TGZR2HKT_text"><span class="fastButtonLinkText"> more...</span></a>
+                    <div  id="716834660" style="display:none" >
+                      <font color=red>Please do not wait until the last minute to make your changes.</font>
+                    </div>
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
+              <tr>
+
+
+
+
+            <td valign="top" width="180" style="white-space: nowrap;">
+            <b>September 26 (Tues)</b>&nbsp;
+            </td>
+            <td valign="top">
+            <div class="messageBody">
+              September bill is due.
+
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
+              <tr>
+
+
+
+
+            <td valign="top" width="180" style="white-space: nowrap;">
+            <b>October 5 (Thu)</b>&nbsp;
+            </td>
+            <td valign="top">
+            <div class="messageBody">
+              Fall term break begins
+
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
+              <tr>
+
+
+
+
+            <td valign="top" width="180" style="white-space: nowrap;">
+            <b>October 9 (Mon)</b>&nbsp;
+            </td>
+            <td valign="top">
+            <div class="messageBody">
+              Fall term break ends.  Classes resume at 9am<br><b><font color=black>Drop period ends for undergraduates at midnight.</font>
+
+
+
+
+
+                    <br><font color=red>Please do not wait until the last minute to make your selections.</font>
+
+
+            </div>
+            </td>
+            </tr>
+
+
+
+
+              <tr><td colspan="2" align="right"><a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKV','','TGZR2HKV',false);" id="TGZR2HKV_text"><span class="fastButtonLinkText"> more dates...</span></a>
+              </td></tr>
+
+
+
+
+
+
+
+              <tr  id="importantDatesMore0" style="display:none">
+
+
+
+
+
+            <td valign="top" width="180" style="white-space: nowrap;">
+            <b>October 27-29 (Fri-Sun)</b>&nbsp;
+            </td>
+            <td valign="top">
+            <div class="messageBody">
+              <a href="http://www.vpul.upenn.edu/osa/fw/" target=new>Family Weekend</a>
+
+
+
+                    <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKX','','TGZR2HKX',false);" id="TGZR2HKX_text"><span class="fastButtonLinkText"> more...</span></a>
+                    <div  id="717459440" style="display:none" >
+                      General registration is now open. See <a href="http://www.vpul.upenn.edu/osa/fw/" target=new>www.vpul.upenn.edu</a> for a calendar of events.
+                    </div>
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+              <tr  id="importantDatesMore1" style="display:none">
+
+
+
+
+
+            <td valign="top" width="180" style="white-space: nowrap;">
+            <b>November 10 (Fri)</b>&nbsp;
+            </td>
+            <td valign="top">
+            <div class="messageBody">
+              Last day to withdraw from a course
+
+
+
+                    <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HKZ','','TGZR2HKZ',false);" id="TGZR2HKZ_text"><span class="fastButtonLinkText"> more...</span></a>
+                    <div  id="717465280" style="display:none" >
+                      You can not withdraw from a course using Penn InTouch, you must contact your school.
+                    </div>
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+              <tr  id="importantDatesMore2" style="display:none">
+
+
+
+
+
+            <td valign="top" width="180" style="white-space: nowrap;">
+            <b> December 11 (Mon)</b>&nbsp;
+            </td>
+            <td valign="top">
+            <div class="messageBody">
+              Last day of classes
+
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+              <tr  id="importantDatesMore3" style="display:none">
+
+
+
+
+
+            <td valign="top" width="180" style="white-space: nowrap;">
+            <b> December 12-13 (Tue-Wed)</b>&nbsp;
+            </td>
+            <td valign="top">
+            <div class="messageBody">
+              Reading days
+
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+              <tr  id="importantDatesMore4" style="display:none">
+
+
+
+
+
+            <td valign="top" width="180" style="white-space: nowrap;">
+            <b>December 14-21 (Thu-Thu)</b>&nbsp;
+            </td>
+            <td valign="top">
+            <div class="messageBody">
+              Final examinations
+
+
+
+                    <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HK1','','TGZR2HK1',false);" id="TGZR2HK1_text"><span class="fastButtonLinkText"> more...</span></a>
+                    <div  id="717661210" style="display:none" >
+                      See the Registrar's Homepage at <a href="http://www.upenn.edu/registrar/" target=new>www.upenn.edu/registrar/</a> for details.
+                    </div>
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+              <tr  id="importantDatesMore5" style="display:none">
+
+
+
+
+
+            <td valign="top" width="180" style="white-space: nowrap;">
+            <b> December 21 (Thu)</b>&nbsp;
+            </td>
+            <td valign="top">
+            <div class="messageBody">
+              <font color=black>Fall 2017 term ends.</font>  <br>
+This is the last day to order paper transcripts before the holiday break.  Please place your order before 5pm.
+
+
+
+
+
+
+            </div>
+            </td>
+            </tr>
+
+          </table>
+          </div>
+     </td>
+   </tr>
+ </table>
+
+
+
+
+         <p/>
+         <table width="580" class="roundTableTop" style="clear: left;" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="roundTableTopTextGrey">
+              <div class="headerRed" style="float:left; width:300px; padding-top:0px; padding-bottom: 0px;">
+              Protect your privacy
+              </div>
+            </td>
+          </tr>
+         </table>
+         <table width="580" style="border: 1px; border-style: solid; border-color: #DDDDDD;">
+          <tr>
+            <td>
+              The University Registrar wishes to remind students that revealing passwords or allowing
+              other individuals or organizations to use your personal accounts in order to access Penn
+              systems is a violation of University policy.
+              <font color="red">Additionally, you compromise your privacy
+              and become vulnerable to identity theft.</font>
+            </td>
+          </tr>
+         </table>
+
+        </td>
+
+        <td valign="top" width="180">
+
+            <div style="width: 180px; float: left; margin-top: 0px;">
+
+
+        <div class="headerRed" style="margin-left: 5px; padding-top:0px; padding-bottom: 4px;">
+          Quick links
+        </div>
+
+        <div class="studentRightRailTableHeader" style="width:170px; white-space: nowrap;">Registration and planning</div>
+        <div class="studentRightRailTableData">
+        <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HK3','','TGZR2HK3',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HK3_text"><span class="fastButtonLinkText">Academic planning worksheet</span></a>
+        <br/><a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HK4','','TGZR2HK4',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HK4_text"><span class="fastButtonLinkText">Course search</span></a>
+        <br/><a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HK5','','TGZR2HK5',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HK5_text"><span class="fastButtonLinkText">Register for courses</span></a>
+        <br/><a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HK6','','TGZR2HK6',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HK6_text"><span class="fastButtonLinkText">View schedule</span></a></div>
+
+        <div class="studentRightRailTableHeader" style="width:170px; white-space: nowrap;">Academic Records</div>
+        <div class="studentRightRailTableData">
+        <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HK7','','TGZR2HK7',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HK7_text"><span class="fastButtonLinkText">View grades</span></a>
+        <br/><a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HK8','','TGZR2HK8',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HK8_text"><span class="fastButtonLinkText">University transcript & GPA</span></a></div>
+
+        <div class="studentRightRailTableHeader" style="width:170px; white-space: nowrap;">Student billing account</div>
+        <div class="studentRightRailTableData">
+        <a href="https://secure.touchnet.net/C21690%5Ftsa/web/caslogin.jsp" target="%5Fblank">View statements & new activity</a>
+        <br/><a href="https://secure.touchnet.net/C21690%5Ftsa/web/caslogin.jsp" target="%5Fblank">Pay your bill / Penn.Pay</a>
+        <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HK9','','TGZR2HK9',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HK9_text"><span class="fastButtonLinkText">Federal refund authorization</span></a></div>
+
+        <div class="studentRightRailTableHeader" style="width:170px; white-space: nowrap;">Financial aid</div>
+        <div class="studentRightRailTableData">
+        <a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HLA','','TGZR2HLA',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HLA_text"><span class="fastButtonLinkText">Application status</span></a>
+        <br/><a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HLB','','TGZR2HLB',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HLB_text"><span class="fastButtonLinkText">Financial aid awards</span></a></div>
+
+        <div class="studentRightRailTableHeader" style="width:170px; white-space: nowrap;">Student loans</div>
+        <div class="studentRightRailTableData">
+        <a href="https://loans.apps.upenn.edu/" target="%5Fblank">Application status & activity</a>
+        <br/><a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HLC','','TGZR2HLC',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HLC_text"><span class="fastButtonLinkText">Cumulative borrowing history</span></a></div>
+
+        <div class="studentRightRailTableHeader" style="width:170px; white-space: nowrap;">Student employment</div>
+        <div class="studentRightRailTableData">
+        <a href="http://www.sfs.upenn.edu/seo  " target="%5Fblank">Job search</a>
+        <br/><a href="#" onclick="return fastGoToUrl(event, 'fast2.do?fastButtonId=TGZR2HLD','','TGZR2HLD',false);" style="font-weight: normal !important;" class="fastWhitelinkButton" id="TGZR2HLD_text"><span class="fastButtonLinkText">Work-study award & earnings</span></a></div>
+
+        <div class="studentRightRailTableHeader" style="width:170px; white-space: nowrap;">Student housing</div>
+        <div class="studentRightRailTableData">
+        <a href="https://webfm1.fres.upenn.edu/ff/Jsp/WebFmPenn.jsp" target="%5Fblank">Maintenance Request (AiM)</a></div>
+
+            </div>
+        </td>
+
+
+  </tr>
+</table>
+
+
+    <!-- $Id: commonPageEnd.jsp,v 1.14 2011/02/28 19:42:05 harveycg Exp $ -->
+	</td>
+
+  </tr>
+
+   <tr valign="top">
+         <!-- dont span any columns so the width of page doesnt affect-->
+          <td colspan="3" id="fastFooterCell" class="fastFooter" style="height: 45px;">
+          <img src="../assets/images/blank.png" height="2" alt="spacer"/><br />
+          <table style="border-collapse:collapse" width="600" cellpadding="0" cellspacing="0">
+            <tr>
+            <td>
+             Copyright &copy; 2017, <a href="http://www.upenn.edu" target="_blank">University of Pennsylvania</a>. All rights reserved. <a href="http://www.upenn.edu/privacy/" target="_blank">Statement on privacy</a>
+            <br/>
+
+
+
+
+                			<a href="/pennInTouch/jsp/fast2.do?fastStart=mobile">Mobile version</a>
+
+
+
+
+            </td>
+            <td align="right">
+                  09/16/2017 08:39:27 PM
+            </td>
+            </tr>
+            </table>
+          </td>
+  </tr>
+</table>
+
+<!-- $Id: commonPageEnd.jsp,v 1.14 2011/02/28 19:42:05 harveycg Exp $ -->
+    <!-- $Id: commonBottom.jsp,v 1.4 2011/02/07 13:49:07 harveycg Exp $ -->
+
+
+
+<script>
+
+            $.blockUI.defaults.message = "<img src='../fast/images/busy.gif' alt='busy'/>";
+            $.blockUI.defaults.css.border = 'none';
+            $.blockUI.defaults.css.backgroundColor = 'transparent';
+            $.blockUI.defaults.overlayCSS.opacity = '0.02';
+            $.blockUI.defaults.fadeIn = '200';
+            $.blockUI.defaults.fadeOut = '400';
+            $.blockUI.defaults.timeout = '30000';
+
+            $().ajaxStop($.unblockUI);
+
+
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var fastResponseJsTemp = {"FastResponseJs":{"disableGoogleAutoFill":true,"controller":"fast2.do","fieldTypesToCopy":{"AjaxMapEntry":[{"theKey":{"@class":"string","$":"tabsObjects"},"theValue":{"@class":"string","$":"LIST"}},{"theKey":{"@class":"string","$":"dualSelects"},"theValue":{"@class":"string","$":"LIST"}},{"theKey":{"@class":"string","$":"marshalTypes"},"theValue":{"@class":"string","$":"LIST"}},{"theKey":{"@class":"string","$":"ajaxElements"},"theValue":{"@class":"string","$":"LIST"}},{"theKey":{"@class":"string","$":"fastUseValidationAlerts"},"theValue":{"@class":"string","$":"PRIMITIVE"}},{"theKey":{"@class":"string","$":"fastDontUseValidationImages"},"theValue":{"@class":"string","$":"PRIMITIVE"}},{"theKey":{"@class":"string","$":"useOriginalJavascriptAlert"},"theValue":{"@class":"string","$":"PRIMITIVE"}},{"theKey":{"@class":"string","$":"tabObjects"},"theValue":{"@class":"string","$":"LIST"}}]},"ajaxElements":{"AjaxMapEntry":[{"theKey":{"@class":"string","$":"TGZR2HHH"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HHH","screenElementId":"TGZR2HHH","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HHK"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HHK","screenElementId":"TGZR2HHK","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HHM"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HHM","screenElementId":"TGZR2HHM","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HHO"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HHO","screenElementId":"TGZR2HHO","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HHQ"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HHQ","screenElementId":"TGZR2HHQ","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HHS"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HHS","screenElementId":"TGZR2HHS","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HHU"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HHU","screenElementId":"TGZR2HHU","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HHW"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HHW","screenElementId":"TGZR2HHW","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HHZ"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HHZ","screenElementId":"TGZR2HHZ","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HH1"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HH1","screenElementId":"TGZR2HH1","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HH3"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HH3","screenElementId":"TGZR2HH3","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HH5"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HH5","screenElementId":"TGZR2HH5","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HH8"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HH8","screenElementId":"TGZR2HH8","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIA"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIA","screenElementId":"TGZR2HIA","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIC"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIC","screenElementId":"TGZR2HIC","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIE"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIE","screenElementId":"TGZR2HIE","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIG"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIG","screenElementId":"TGZR2HIG","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HII"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HII","screenElementId":"TGZR2HII","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIK"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIK","screenElementId":"TGZR2HIK","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIN"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIN","screenElementId":"TGZR2HIN","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIP"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIP","screenElementId":"TGZR2HIP","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIR"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIR","screenElementId":"TGZR2HIR","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIT"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIT","screenElementId":"TGZR2HIT","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIW"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIW","screenElementId":"TGZR2HIW","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HIY"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HIY","screenElementId":"TGZR2HIY","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HI0"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HI0","screenElementId":"TGZR2HI0","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HI2"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HI2","screenElementId":"TGZR2HI2","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HI5"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HI5","screenElementId":"TGZR2HI5","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HI7"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HI7","screenElementId":"TGZR2HI7","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HI9"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HI9","screenElementId":"TGZR2HI9","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJB"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJB","screenElementId":"TGZR2HJB","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJD"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJD","screenElementId":"TGZR2HJD","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJG"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJG","screenElementId":"TGZR2HJG","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJI"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJI","screenElementId":"TGZR2HJI","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJL"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJL","screenElementId":"TGZR2HJL","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJN"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJN","screenElementId":"TGZR2HJN","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJP"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJP","screenElementId":"TGZR2HJP","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJR"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJR","screenElementId":"TGZR2HJR","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJT"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJT","screenElementId":"TGZR2HJT","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJV"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJV","screenElementId":"TGZR2HJV","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJY"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJY","screenElementId":"TGZR2HJY","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJ0"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJ0","screenElementId":"TGZR2HJ0","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJ2"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJ2","screenElementId":"TGZR2HJ2","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJ4"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJ4","screenElementId":"TGZR2HJ4","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HJ7"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HJ8","screenElementId":"TGZR2HJ7","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HKD"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HKE","screenElementId":"TGZR2HKD","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HKH"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HKI","screenElementId":"TGZR2HKH","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HKL"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HKM","screenElementId":"TGZR2HKL","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HKN"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HKO","screenElementId":"TGZR2HKN","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HKP"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HKQ","screenElementId":"TGZR2HKP","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HKR"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HKS","screenElementId":"TGZR2HKR","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HKT"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HKU","screenElementId":"TGZR2HKT","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HKV"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HKW","screenElementId":"TGZR2HKV","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HKX"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HKY","screenElementId":"TGZR2HKX","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HKZ"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HK0","screenElementId":"TGZR2HKZ","disableValidation":false}},{"theKey":{"@class":"string","$":"TGZR2HK1"},"theValue":{"@class":"AjaxEvent","ajaxEventType":"NORMAL","eventName":"onclick","ajaxId":"TGZR2HK2","screenElementId":"TGZR2HK1","disableValidation":false}}]},"useOriginalJavascriptAlert":false,"fastDontUseValidationImages":false,"fastUseValidationAlerts":false,"namesToClear":{"AjaxMapEntry":[{"theKey":{"@class":"string","$":"TGZR2HHJ"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HHL"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HHN"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HHP"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HHR"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HHT"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HHV"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HHY"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HH0"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HH2"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HH4"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HH7"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HH9"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIB"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HID"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIF"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIH"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIJ"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIM"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIO"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIQ"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIS"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIV"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIX"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HIZ"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HI1"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HI4"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HI6"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HI8"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJA"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJC"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJF"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJH"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJK"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJM"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJO"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJQ"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJS"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJU"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJX"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJZ"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJ1"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJ3"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJ5"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJ6"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HJ7"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"bogus"},"theValue":{"@class":"string","$":"FORM"}},{"theKey":{"@class":"string","$":"bogus_TGZR2HJ9"},"theValue":{"@class":"string","$":"FORM_ELEMENT"}},{"theKey":{"@class":"string","$":"TGZR2HKB"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKD"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKH"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKJ"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKK"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKL"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKN"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKP"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKR"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKT"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKV"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKX"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HKZ"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HK1"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HK3"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HK4"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HK5"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HK6"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HK7"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HK8"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HK9"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HLA"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HLB"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HLC"},"theValue":{"@class":"string","$":"BUTTON"}},{"theKey":{"@class":"string","$":"TGZR2HLD"},"theValue":{"@class":"string","$":"BUTTON"}}]}}};
+fastInitFastResponse();
+$(document).ready(
+  function(){
+    var fastBlurDiv = document.getElementById("fastBlurDiv");
+    if (!fastBlurDiv || !fastBlurDiv.parentNode){
+      return;
+    }
+    fastBlurDiv.parentNode.removeChild(fastBlurDiv);
+  });
+function fastButton_TGZR2HJ7_onclick(event) {return fastHideShowFromButton(event, 'TGZR2HJ7', 'less...', ' more...', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', '2993565', 'true');}
+function fastField_bogus_TGZR2HJ9_validates() {
+  return 'lengthValid(maxLength_5)';
+}
+function fastField_bogus_TGZR2HJ9_styleClass() {
+  return 'fastFormField';
+}
+function fastField_bogus_TGZR2HJ9_errorStyleClass() {
+  return 'fastFormFieldError';
+}
+function fastButton_TGZR2HKD_onclick(event) {return fastHideShowFromButton(event, 'TGZR2HKD', 'hide schedule', 'show schedule', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'showFullSchedule2017Cfalsetruefalse', 'true');}
+function fastButton_TGZR2HKH_onclick(event) {return fastHideShowFromButton(event, 'TGZR2HKH', 'Hide schedule details', 'Show schedule details', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'additionalScheduleDetails2017Cfalsetruefalse', 'true');}
+function fastButton_TGZR2HKT_onclick(event) {return fastHideShowFromButton(event, 'TGZR2HKT', 'less...', ' more...', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', '71683466', 'true');}
+function fastButton_TGZR2HKV_onclick(event) {return fastHideShowFromButton(event, 'TGZR2HKV', 'fewer dates...', ' more dates...', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'importantDatesMore', 'true');}
+function fastButton_TGZR2HKX_onclick(event) {return fastHideShowFromButton(event, 'TGZR2HKX', 'less...', ' more...', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', '71745944', 'true');}
+function fastButton_TGZR2HKZ_onclick(event) {return fastHideShowFromButton(event, 'TGZR2HKZ', 'less...', ' more...', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', '71746528', 'true');}
+function fastButton_TGZR2HK1_onclick(event) {return fastHideShowFromButton(event, 'TGZR2HK1', 'less...', ' more...', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', 'fastNone', '71766121', 'true');}
+function fastColorOfErrors() {
+  return 'red';
+}
+</script>
+  </body>
+</html>

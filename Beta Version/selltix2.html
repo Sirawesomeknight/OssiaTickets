@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="CSS/selltix2.CSS">
+  <script src="JS/selltix2.js"></script>
+<title>Grabbit</title>
+</head>
+<body onload="load()">
+<div id="theheader">
+<img src="resources/guccimane.jpg" id="zuko">
+<div id="artistlabel">
+<h1 id="artisttitle">MadeinTYO</h1>
+<h2 id="loctime">Theatre of Living Arts, Philadelphia, PA <br> October 12, 8PM</h2>
+</div>
+</div>
+<div id="sellers">
+<form name="sellersform">
+<div id="firstoption">
+  <h3>How many tickets?</h3>
+  <select id="quantity">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  </select>
+<label id="tentacles" for="quantity">Ticket(s)</label>
+</div>
+<br>
+<br>
+<hr id="divide">
+<br>
+<div id="secondoption">
+<h3>Where are the seats?</h3>
+  <div id="seatoptions">
+  <div id="ga" onclick="selectButton('ga')"><p>General Admission</p></div>
+  <div id="other" onclick="selectButton('other')"><p>Other</p></div>
+  </div>
+</div>
+<br>
+<br>
+<hr id="divide">
+<br>
+<div id="thirdoption">
+<h3>How do you want to sell?</h3>
+<div id="priceoptions">
+<div id="msell" onclick="selectButton('msell')"><p>Market Sell</p></div>
+<div id="ssell" onclick="selectButton('ssell')"><p>Set Price</p></div>
+</div>
+</div>
+<br>
+<br>
+<div id="sellsub"><h3>Sell Tickets</h3></div>
+</form>
+</div>
+  <div id="bottom">
+    <br>
+    <br>
+    <hr>
+    <br>
+  <p>Copyright &copy Grabbit LLC 2017. All rights reserved.</p>
+  </div>
+  <div id="topbar">
+  <img src="resources/logo.png" id="logo">
+  <input type="text" placeholder="Search here..." id="searchinput">
+  <div id="navbar">
+    <div id="stix">
+      <p id="money">Sell Tickets</p>
+    </div>
+  <div id="abt">
+    <p id="money">FAQ</p>
+  </div><div id="ctus">
+  <p id="money">Contact Us</p>
+  </div>
+</div>
+  <div id="registerbutt">
+  <p id="liquidass">Sign in | Register</p>
+  </div>
+  </div>
+</body>
+</html>
