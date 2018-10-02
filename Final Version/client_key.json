@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dogwood-actor-201923",
+  "private_key_id": "ae54b6cad1ebe0c21f43177b4bf3030c566f5e1d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDUMm+BgIjePFBJ\nQBbZgjHqjAiNjjyvBqLP0u7hwM1j1tqSU+nYF7KZSmAzFzF4BLMjjNowhzkKasBB\nPJIGuRsF8hogK+vAs61AkrBHjJ0GiVfMuVyDkDOfxgTFwYkmkpyPY/x7a7qwD33B\nZPfxl8p3V2ypu9EeLBdJTYZwmb4tiswDKdJelpkM3M26dNNrUcQIUNpC5Ez7xK4M\nLmYc1f4MvbvCorU6eNQllKwrlFaegbMWHDfPSt0d9FIMhQioXC73wvw06iginTHl\nZ1l1fjJEp9qf3LJ5df1in46lgpQQVks7oyul5VOWCW4NJubOPWAAFR0BDAfa+ZSL\nILGTmk7hAgMBAAECggEABRcoZwO6jNPHNImmvq0tlcAKHry5OpTq/Be2IrjriHQN\nmmXsUcJ4Rq6Cxij91yBsPHunGpPM39HJpsr9YQ9I3Vy2aRwKn9zjmK1oMJA4TmFG\nN59g/3g6r9AaGlUjLVdmLXevZXXTNMDrYjPCEbPzr8cbcIs0mB/kR142bd43Umvz\nNulPr2TsoONEB20HvGrGdxUUaQaa+VbkOlTfKjyO/L1kN1P1CI+WpKbDcCQP63Lc\nQTq2Z/q8BCkTDBQefxhjeCWE1bdR6flhGhs/OHYG87PqsqoIyQiG1OhXfPVjPuhd\nr05+ZcoVWtdMqwiNHtX5rfi2owvckArbK9k8Ta8nMQKBgQD3gp3K/a4C6jjtpMhR\nwyi8tx3bRMsbakDtfY1AAyKE2M2GmORzmN4daEZKvJktCckF4CGL9fugREqAXNCX\nlJPW0FBFTGFzvHBH7HW2eXuZVEbMmumwR4EUsz3wSp+6AqVJw5e7IRfHo9VaPbJX\nASVHoDZnhZlO0+wcdLvMTnlpMQKBgQDbebwEftyYKRwJk0HjITE9e0Nh0D+5Md+o\ntPW4LrCt1xLOXwLsEjO9wMV3YV1HPBNe3Vf7Sf7utXBtofWU/1NMqJ2C6r9qNmXk\naHJAACHVlh8F2CIQizKxzTOyb6Bk1Bo9fqalDoUVf89tI9EQqLyfaQlSgp+DkEVW\nBce9TEzUsQKBgQCVX77bQz5BhBnXUhuTPLTZL6pVKq9pXDbTHXKhr0Kl6jIfiSZW\nnWtvU/8YG7pV9BHd+eZFEa9Kiexsi5dX49NVUWMgb3hg4Njij1J7TdXKM5KG6Pcf\n7Ad69rHq0x6SpAYc/m4UAWTYl4erbpCy8X4OPCKZV4euizdz9P9hzfp4AQKBgGq+\nACWnlZ4jkFFP32GaCRq/0nvGDtgBW6fvqvpTKvbBfZIFP6SVDbkiAmgXYIh+vWUL\n/fhneqeacv2/IXO/4kGMWF8N0N7VaiT2b2qVJd99TcVH4vls2dED3jrQc4/WYJS7\n/kyUjUFxke6g1tNlXaeiLDiG8xHHnxFBam20qEFhAoGBAIQQJhe/tIjkZygP+Mre\nS38RTtFMZEsJzsMx7dG1ZCcV5tNhGh07w3ZXJcG0U4SNnnH7uMKeL/xuBHB5gje6\nU8xJV4xu0H6g9M9ZyBT0+//t0mZuM0/BxbgebRdzBUUO1KBw8tmqeEBz1vv9kVDQ\nte3XpV2ib7bP6w5xmH/R0FTR\n-----END PRIVATE KEY-----\n",
+  "client_email": "ticketupload@dogwood-actor-201923.iam.gserviceaccount.com",
+  "client_id": "112413911202742805490",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ticketupload%40dogwood-actor-201923.iam.gserviceaccount.com"
+}
